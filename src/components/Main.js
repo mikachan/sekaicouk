@@ -34,7 +34,7 @@ class Main extends React.Component {
           </span>
           <p>
             Front end web developer based in Lancashire, with 11 years
-            collective experience in both agency and in-house environments.
+            commercial experience in both agency and in-house environments.
             Loves peanut butter, photography, traveling, video games, dragons
             and dogs.
           </p>
