@@ -9,7 +9,10 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>sekai.co.uk</h1>
-        <p>Personal site for Sarah; front end web developer from Lancashire.</p>
+        <p>
+          Personal site of Sarah Norris; front end web developer from
+          Lancashire.
+        </p>
       </div>
     </div>
     <nav>
