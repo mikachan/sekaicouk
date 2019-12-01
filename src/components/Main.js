@@ -1,3 +1,4 @@
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
@@ -103,58 +104,58 @@ class Main extends React.Component {
           </form> */}
           <ul className="icons">
             <li>
-              <a
+              <OutboundLink
                 href="https://www.linkedin.com/in/sarahnorris88"
                 className="icon fa-linkedin"
                 target="_blank"
               >
                 <span className="label">LinkedIn</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="https://www.twitter.com/mikachan_"
                 className="icon fa-twitter"
                 target="_blank"
               >
                 <span className="label">Twitter</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="http://last.fm/user/mikachan_"
                 className="icon fa-lastfm"
                 target="_blank"
               >
                 <span className="label">Last.fm</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="https://www.facebook.com/sarah.norris88"
                 className="icon fa-facebook"
                 target="_blank"
               >
                 <span className="label">Facebook</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="https://www.instagram.com/mikachan_/"
                 className="icon fa-instagram"
                 target="_blank"
               >
                 <span className="label">Instagram</span>
-              </a>
+              </OutboundLink>
             </li>
             <li>
-              <a
+              <OutboundLink
                 href="https://github.com/mikachan"
                 className="icon fa-github"
                 target="_blank"
               >
                 <span className="label">GitHub</span>
-              </a>
+              </OutboundLink>
             </li>
           </ul>
           {close}
