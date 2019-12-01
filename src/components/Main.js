@@ -106,6 +106,7 @@ class Main extends React.Component {
               <a
                 href="https://www.linkedin.com/in/sarahnorris88"
                 className="icon fa-linkedin"
+                target="_blank"
               >
                 <span className="label">LinkedIn</span>
               </a>
@@ -114,6 +115,7 @@ class Main extends React.Component {
               <a
                 href="https://www.twitter.com/mikachan_"
                 className="icon fa-twitter"
+                target="_blank"
               >
                 <span className="label">Twitter</span>
               </a>
@@ -122,6 +124,7 @@ class Main extends React.Component {
               <a
                 href="http://last.fm/user/mikachan_"
                 className="icon fa-lastfm"
+                target="_blank"
               >
                 <span className="label">Last.fm</span>
               </a>
@@ -130,6 +133,7 @@ class Main extends React.Component {
               <a
                 href="https://www.facebook.com/sarah.norris88"
                 className="icon fa-facebook"
+                target="_blank"
               >
                 <span className="label">Facebook</span>
               </a>
@@ -138,12 +142,17 @@ class Main extends React.Component {
               <a
                 href="https://www.instagram.com/mikachan_/"
                 className="icon fa-instagram"
+                target="_blank"
               >
                 <span className="label">Instagram</span>
               </a>
             </li>
             <li>
-              <a href="https://github.com/mikachan" className="icon fa-github">
+              <a
+                href="https://github.com/mikachan"
+                className="icon fa-github"
+                target="_blank"
+              >
                 <span className="label">GitHub</span>
               </a>
             </li>
