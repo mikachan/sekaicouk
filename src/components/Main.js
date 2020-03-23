@@ -1,86 +1,90 @@
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import PropTypes from 'prop-types'
-import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import PropTypes from 'prop-types';
+import React from 'react';
+import pic01 from '../images/pic01.jpg';
+import pic02 from '../images/pic02.jpg';
+import pic03 from '../images/pic03.jpg';
 
 class Main extends React.Component {
-  render() {
-    let close = (
-      <div
-        className="close"
-        onClick={() => {
-          this.props.onCloseArticle()
-        }}
-      ></div>
-    )
+	render() {
+		let close = (
+			<button
+				className="close"
+				onClick={() => {
+					this.props.onCloseArticle();
+				}}
+			></button>
+		);
 
-    return (
-      <div
-        ref={this.props.setWrapperRef}
-        id="main"
-        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
-      >
-        <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
-          <p>
-            Front end web developer based in Lancashire, with 11 years
-            commercial experience in both agency and in-house environments.
-            Loves peanut butter, photography, traveling, video games, dragons
-            and dogs.
-          </p>
-          {close}
-        </article>
+		return (
+			<div
+				ref={this.props.setWrapperRef}
+				id="main"
+				style={
+					this.props.timeout
+						? { display: 'flex' }
+						: { display: 'none' }
+				}
+			>
+				<article
+					id="intro"
+					className={`${
+						this.props.article === 'intro' ? 'active' : ''
+					} ${this.props.articleTimeout ? 'timeout' : ''}`}
+					style={{ display: 'none' }}
+				>
+					<h2 className="major">Intro</h2>
+					<span className="image main">
+						<img src={pic01} alt="" />
+					</span>
+					<p>
+						Front end web developer based in Lancashire, with 11
+						years commercial experience in both agency and in-house
+						environments. Loves peanut butter, photography,
+						traveling, video games, dragons and dogs.
+					</p>
+					{close}
+				</article>
 
-        <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Work</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <p>Coming soon...</p>
-          {close}
-        </article>
+				<article
+					id="work"
+					className={`${
+						this.props.article === 'work' ? 'active' : ''
+					} ${this.props.articleTimeout ? 'timeout' : ''}`}
+					style={{ display: 'none' }}
+				>
+					<h2 className="major">Work</h2>
+					<span className="image main">
+						<img src={pic02} alt="" />
+					</span>
+					<p>Coming soon...</p>
+					{close}
+				</article>
 
-        <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">About</h2>
-          <span className="image main">
-            <img src={pic03} alt="" />
-          </span>
-          <p>Coming soon...</p>
-          {close}
-        </article>
+				<article
+					id="about"
+					className={`${
+						this.props.article === 'about' ? 'active' : ''
+					} ${this.props.articleTimeout ? 'timeout' : ''}`}
+					style={{ display: 'none' }}
+				>
+					<h2 className="major">About</h2>
+					<span className="image main">
+						<img src={pic03} alt="" />
+					</span>
+					<p>Coming soon...</p>
+					{close}
+				</article>
 
-        <article
-          id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Contact</h2>
-          {/* <form method="post" action="#">
+				<article
+					id="contact"
+					className={`${
+						this.props.article === 'contact' ? 'active' : ''
+					} ${this.props.articleTimeout ? 'timeout' : ''}`}
+					style={{ display: 'none' }}
+				>
+					<h2 className="major">Contact</h2>
+					{/* <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -102,76 +106,76 @@ class Main extends React.Component {
               </li>
             </ul>
           </form> */}
-          <ul className="icons">
-            <li>
-              <OutboundLink
-                href="https://www.linkedin.com/in/sarahnorris88"
-                className="icon fa-linkedin"
-                target="_blank"
-              >
-                <span className="label">LinkedIn</span>
-              </OutboundLink>
-            </li>
-            <li>
-              <OutboundLink
-                href="https://www.twitter.com/mikachan_"
-                className="icon fa-twitter"
-                target="_blank"
-              >
-                <span className="label">Twitter</span>
-              </OutboundLink>
-            </li>
-            <li>
-              <OutboundLink
-                href="http://last.fm/user/mikachan_"
-                className="icon fa-lastfm"
-                target="_blank"
-              >
-                <span className="label">Last.fm</span>
-              </OutboundLink>
-            </li>
-            <li>
-              <OutboundLink
-                href="https://www.facebook.com/sarah.norris88"
-                className="icon fa-facebook"
-                target="_blank"
-              >
-                <span className="label">Facebook</span>
-              </OutboundLink>
-            </li>
-            <li>
-              <OutboundLink
-                href="https://www.instagram.com/mikachan_/"
-                className="icon fa-instagram"
-                target="_blank"
-              >
-                <span className="label">Instagram</span>
-              </OutboundLink>
-            </li>
-            <li>
-              <OutboundLink
-                href="https://github.com/mikachan"
-                className="icon fa-github"
-                target="_blank"
-              >
-                <span className="label">GitHub</span>
-              </OutboundLink>
-            </li>
-          </ul>
-          {close}
-        </article>
-      </div>
-    )
-  }
+					<ul className="icons">
+						<li>
+							<OutboundLink
+								href="https://www.linkedin.com/in/sarahnorris88"
+								className="icon fa-linkedin"
+								target="_blank"
+							>
+								<span className="label">LinkedIn</span>
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="https://www.twitter.com/mikachan_"
+								className="icon fa-twitter"
+								target="_blank"
+							>
+								<span className="label">Twitter</span>
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="http://last.fm/user/mikachan_"
+								className="icon fa-lastfm"
+								target="_blank"
+							>
+								<span className="label">Last.fm</span>
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="https://www.facebook.com/sarah.norris88"
+								className="icon fa-facebook"
+								target="_blank"
+							>
+								<span className="label">Facebook</span>
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="https://www.instagram.com/mikachan_/"
+								className="icon fa-instagram"
+								target="_blank"
+							>
+								<span className="label">Instagram</span>
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="https://github.com/mikachan"
+								className="icon fa-github"
+								target="_blank"
+							>
+								<span className="label">GitHub</span>
+							</OutboundLink>
+						</li>
+					</ul>
+					{close}
+				</article>
+			</div>
+		);
+	}
 }
 
 Main.propTypes = {
-  route: PropTypes.object,
-  article: PropTypes.string,
-  articleTimeout: PropTypes.bool,
-  onCloseArticle: PropTypes.func,
-  timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired,
-}
+	route: PropTypes.object,
+	article: PropTypes.string,
+	articleTimeout: PropTypes.bool,
+	onCloseArticle: PropTypes.func,
+	timeout: PropTypes.bool,
+	setWrapperRef: PropTypes.func.isRequired,
+};
 
-export default Main
+export default Main;
