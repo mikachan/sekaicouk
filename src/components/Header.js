@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -10,8 +11,8 @@ const Header = (props) => (
 			<div className="inner">
 				<h1>sekai.co.uk</h1>
 				<p>
-					Personal site of Sarah Norris; front end web developer from
-					Lancashire.
+					Personal site of Sarah Norris; web developer from
+					Lancashire, UK.
 				</p>
 			</div>
 		</div>
@@ -27,13 +28,7 @@ const Header = (props) => (
 					</button>
 				</li>
 				<li>
-					<button
-						onClick={() => {
-							props.onOpenArticle('blog');
-						}}
-					>
-						Blog
-					</button>
+					<Link to="/blog">Blog</Link>
 				</li>
 				<li>
 					<button

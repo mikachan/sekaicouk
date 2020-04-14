@@ -8,10 +8,16 @@ const Intro = () => (
 			<img src={pic01} alt="" />
 		</span>
 		<p>
-			Front end web developer based in Lancashire, with 11 years
-			commercial experience in both agency and in-house environments.
-			Loves peanut butter, photography, traveling, video games, dragons
-			and dogs.
+			Web developer based in Lancashire, with 12 years commercial
+			experience in both agency and in-house environments. Currently
+			enjoying React, Svelte and attempting to keep up with CSS.
+		</p>
+		<p>
+			<span role="img" aria-label="heart">
+				💜
+			</span>{' '}
+			Loves peanut butter, photography, traveling, video games, music,
+			Japan, dragons and dogs.
 		</p>
 	</div>
 );

@@ -8,11 +8,11 @@ const Contact = () => (
 		<ul className="icons">
 			<li>
 				<OutboundLink
-					href="https://www.linkedin.com/in/sarahnorris88"
-					className="icon fa-linkedin"
+					href="https://www.instagram.com/mikachan_/"
+					className="icon fa-instagram"
 					target="_blank"
 				>
-					<span className="label">LinkedIn</span>
+					<span className="label">Instagram</span>
 				</OutboundLink>
 			</li>
 			<li>
@@ -22,6 +22,15 @@ const Contact = () => (
 					target="_blank"
 				>
 					<span className="label">Twitter</span>
+				</OutboundLink>
+			</li>
+			<li>
+				<OutboundLink
+					href="https://www.linkedin.com/in/sarahnorris88"
+					className="icon fa-linkedin"
+					target="_blank"
+				>
+					<span className="label">LinkedIn</span>
 				</OutboundLink>
 			</li>
 			<li>
@@ -40,15 +49,6 @@ const Contact = () => (
 					target="_blank"
 				>
 					<span className="label">Facebook</span>
-				</OutboundLink>
-			</li>
-			<li>
-				<OutboundLink
-					href="https://www.instagram.com/mikachan_/"
-					className="icon fa-instagram"
-					target="_blank"
-				>
-					<span className="label">Instagram</span>
 				</OutboundLink>
 			</li>
 			<li>

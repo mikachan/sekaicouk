@@ -25,7 +25,7 @@ const Post = (props) => {
 	return (
 		<Layout>
 			<div>
-				<h1>{RichText.render(doc.node.title)}</h1>
+				{RichText.render(doc.node.title)}
 				<div>{RichText.render(doc.node.content)}</div>
 			</div>
 		</Layout>
