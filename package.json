@@ -1,38 +1,47 @@
 {
 	"name": "sekai.co.uk",
 	"description": "sekai.co.uk",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"author": "Sarah Norris",
-	"dependencies": {
-		"gatsby": "^2.21.9",
-		"gatsby-plugin-google-analytics": "^2.3.0",
-		"gatsby-plugin-manifest": "^2.4.1",
-		"gatsby-plugin-offline": "^3.2.0",
-		"gatsby-plugin-react-helmet": "^3.3.0",
-		"gatsby-plugin-sass": "^2.3.0",
-		"gatsby-source-prismic-graphql": "^3.6.2",
-		"node-sass": "^4.14.0",
-		"prismic-reactjs": "^1.3.1",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.1",
-		"react-helmet": "^6.0.0"
-	},
-	"keywords": [
-		"gatsby"
-	],
 	"license": "MIT",
-	"scripts": {
-		"build": "gatsby build",
-		"develop": "gatsby develop",
-		"format": "prettier --write '**/*.js'",
-		"start": "npm run develop",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"devDependencies": {
-		"prettier": "^2.0.5"
-	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mikachan/sekaicouk"
+	},
+	"scripts": {
+		"dev": "run-p start:dev watch:tailwind",
+		"build": "npm run build:tailwind && sapper build",
+		"watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
+		"build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
+		"export": "sapper export",
+		"start": "node __sapper__/build",
+		"start:dev": "sapper dev",
+		"test": ""
+	},
+	"dependencies": {
+		"compression": "^1.7.1",
+		"gray-matter": "^4.0.2",
+		"highlight.js": "^10.1.1",
+		"marked": "^1.1.0",
+		"polka": "next",
+		"prismic-dom": "^2.2.3",
+		"prismic-javascript": "^3.0.1",
+		"sapper-google-analytics": "^1.0.1",
+		"sirv": "^1.0.1",
+		"svelte-awesome": "^2.3.0"
+	},
+	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^2.3.0",
+		"cssnano": "^4.1.10",
+		"npm-run-all": "^4.1.5",
+		"postcss": "^7.0.32",
+		"postcss-cli": "^7.1.1",
+		"postcss-load-config": "^2.1.0",
+		"sapper": "^0.27.16",
+		"svelte": "^3.24.0",
+		"svelte-loader": "^2.9.0",
+		"svelte-preprocess": "^4.0.6",
+		"tailwindcss": "^1.4.6",
+		"webpack": "^4.43.0"
 	}
 }

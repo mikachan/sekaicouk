@@ -1,0 +1,15 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#333333",
+	"name": "sekai.co.uk",
+	"short_name": "sekai.co.uk",
+	"display": "minimal-ui",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "charizard.png",
+			"sizes": "200x235",
+			"type": "image/png"
+		}
+	]
+}
