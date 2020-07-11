@@ -2,6 +2,7 @@
 	import Nav from '../components/Nav.svelte';
 	import Background from '../components/Background.svelte';
 	import GoogleAnalytics from 'sapper-google-analytics/GoogleAnalytics.svelte';
+	import { stores } from '@sapper/app';
 
 	export let segment;
 	let ga_measurment_id = 'UA-7281616-1';
@@ -24,6 +25,8 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;600&display=swap"
 	rel="stylesheet" />
+
+<GoogleAnalytics {stores} id={ga_measurment_id} />
 
 <Background />
 
