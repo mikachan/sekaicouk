@@ -9,12 +9,12 @@
 		"url": "https://github.com/mikachan/sekaicouk"
 	},
 	"scripts": {
-		"dev": "run-p start:dev watch:tailwind",
 		"build": "npm run build:tailwind && sapper build",
 		"watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
 		"build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
 		"export": "sapper export",
-		"start": "node __sapper__/build",
+		"start": "run-p start:dev watch:tailwind",
+		"start:build": "node __sapper__/build",
 		"start:dev": "sapper dev",
 		"test": ""
 	},
