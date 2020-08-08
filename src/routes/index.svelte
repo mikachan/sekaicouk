@@ -15,6 +15,7 @@
 	p {
 		text-transform: uppercase;
 		letter-spacing: 0.1rem;
+		padding: 0 5em;
 	}
 
 	@media (min-width: 480px) {
@@ -33,8 +34,8 @@
 		<div class="inner">
 			<h1>sekai.co.uk</h1>
 			<p>
-				Personal site of Sarah Norris; front end web developer from
-				Lancashire.
+				Personal site of Sarah Norris; front end web developer &amp;
+				wannabe&nbsp;hippy from Lancashire.
 			</p>
 		</div>
 	</div>

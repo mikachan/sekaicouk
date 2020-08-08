@@ -39,7 +39,7 @@
 
 	li {
 		display: inline-block;
-		@apply text-gray-400 px-2;
+		@apply text-gray-400 px-2 pb-4;
 	}
 
 	li a {
