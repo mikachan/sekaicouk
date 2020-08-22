@@ -1,5 +1,6 @@
 <style>
 	#bg {
+		background-color: #a07f19;
 		transform: scale(1);
 		-webkit-backface-visibility: hidden;
 		position: fixed;

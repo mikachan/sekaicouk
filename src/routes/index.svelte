@@ -34,8 +34,8 @@
 		<div class="inner">
 			<h1>sekai.co.uk</h1>
 			<p>
-				Personal site of Sarah Norris; front end web developer &amp;
-				wannabe&nbsp;hippy from Lancashire.
+				Personal site of Sarah Norris; web developer &amp;
+				wannabe&nbsp;hippy.
 			</p>
 		</div>
 	</div>

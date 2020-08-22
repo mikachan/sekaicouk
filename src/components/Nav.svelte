@@ -77,17 +77,22 @@
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li>
+		<!-- <li>
 			<a
 				rel="prefetch"
 				aria-current={segment === 'blog' ? 'page' : undefined}
 				href="blog">
 				blog
 			</a>
-		</li>
+		</li> -->
 
 		<li class="heart">
-			<Icon data={heart} class="fill-current" style="fill: white;" />
+			<a
+				rel="prefetch"
+				aria-current={segment === 'love' ? 'page' : undefined}
+				href="love">
+				<Icon data={heart} class="fill-current" style="fill: white;" />
+			</a>
 		</li>
 	</ul>
 </nav>

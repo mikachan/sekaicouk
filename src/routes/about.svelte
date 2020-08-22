@@ -54,9 +54,8 @@
 <h1>About</h1>
 
 <p>
-	Front end web developer based in Lancashire, with experience working in both
-	agency and in-house environments since 2008. Loves
-	<Icon data={heart} />
+	Web developer based in Lancashire. Loves
+	<Icon data={heart} class="fill-current" style="fill: red;" />
 	music, peanut butter, photography, traveling, video games, dragons and dogs.
 </p>
 
