@@ -54,9 +54,10 @@
 <h1>About</h1>
 
 <p>
-	Web developer based in Lancashire. Loves
+	Web developer from Lancashire. Loves
 	<Icon data={heart} class="fill-current" style="fill: red;" />
-	music, peanut butter, photography, traveling, video games, dragons and dogs.
+	music, peanut butter, photography, traveling, video games, dragons and
+	animals.
 </p>
 
 <ul>
@@ -90,18 +91,6 @@
 			target="_blank"
 			class="hover:text-green-600">
 			<Icon data={lastfm} class="fill-current" label="Lastfm" scale="2" />
-		</a>
-	</li>
-	<li>
-		<a
-			href="https://www.facebook.com/sarah.norris88"
-			target="_blank"
-			class="hover:text-purple-400">
-			<Icon
-				data={facebook}
-				class="fill-current"
-				label="Facebook"
-				scale="2" />
 		</a>
 	</li>
 	<li>
