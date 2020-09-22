@@ -1,7 +1,4 @@
 <script>
-	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import { heart } from 'svelte-awesome/icons';
-
 	export let segment;
 </script>
 
@@ -52,10 +49,6 @@
 		display: block;
 		@apply text-white;
 	}
-
-	.heart {
-		@apply px-2;
-	}
 </style>
 
 <nav>
@@ -74,24 +67,32 @@
 				about
 			</a>
 		</li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<!-- <li>
+		<li>
 			<a
-				rel="prefetch"
-				aria-current={segment === 'blog' ? 'page' : undefined}
-				href="blog">
-				blog
+				aria-current={segment === 'photography' ? 'page' : undefined}
+				href="photography">
+				photography
 			</a>
-		</li> -->
-
-		<li class="heart">
+		</li>
+		<li>
 			<a
-				rel="prefetch"
-				aria-current={segment === 'love' ? 'page' : undefined}
-				href="love">
-				<Icon data={heart} class="fill-current" style="fill: white;" />
+				aria-current={segment === 'code' ? 'page' : undefined}
+				href="code">
+				code
+			</a>
+		</li>
+		<li>
+			<a
+				aria-current={segment === 'music' ? 'page' : undefined}
+				href="music">
+				music
+			</a>
+		</li>
+		<li>
+			<a
+				aria-current={segment === 'words' ? 'page' : undefined}
+				href="words">
+				words
 			</a>
 		</li>
 	</ul>
