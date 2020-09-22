@@ -3,9 +3,9 @@ import grayMatter from 'gray-matter';
 import path from 'path';
 
 const getAllPosts = () =>
-	fs.readdirSync('src/content/photography').map((fileName) => {
+	fs.readdirSync('src/content/code').map((fileName) => {
 		const post = fs.readFileSync(
-			path.resolve('src/content/photography', fileName),
+			path.resolve('src/content/code', fileName),
 			'utf-8'
 		);
 		return grayMatter(post).data;
