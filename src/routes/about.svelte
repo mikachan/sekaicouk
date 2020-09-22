@@ -55,7 +55,7 @@
 
 <p>
 	Web developer from Lancashire. Loves
-	<Icon data={heart} class="fill-current" style="fill: red;" />
+	<Icon data={heart} class="fill-current" style="fill: indianred;" />
 	music, peanut butter, photography, traveling, video games, dragons and
 	animals.
 </p>
