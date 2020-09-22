@@ -1,11 +1,11 @@
 ---
 slug: 'coming-soon'
 title: 'Coming soon'
-date: '03.06.2020'
-category: 'daily'
-intro: 'New blog written in Svelte'
+date: '22.09.2020'
+category: 'js'
+intro: 'Written in Svelte'
 ---
 
-Blog posts coming soon...
+Coming soon...
 
 <!-- `javascript console.log("test code highlight")` -->

@@ -2,7 +2,7 @@
 	export async function preload({ params, query }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
-		const res = await this.fetch(`love/${params.slug}.json`);
+		const res = await this.fetch(`photography/${params.slug}.json`);
 		const data = await res.json();
 
 		if (res.status === 200) {
@@ -53,7 +53,11 @@
 	}
 
 	h1 {
-		padding: 0 0 0.5em 0;
+		font-size: 2em;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.8rem;
+		margin: 0 0 0.5em 0;
 	}
 </style>
 
@@ -61,22 +65,17 @@
 	<title>{post.title} | sekai.co.uk</title>
 </svelte:head>
 
-<div class="container max-w-5xl mx-auto">
+<div class="text-center">
+	<p class="text-sm md:text-base text-teal-500 font-bold">{post.date}</p>
+	<h1 class="font-bold break-normal text-3xl md:text-5xl">{post.title}</h1>
+</div>
+
+<div class="container max-w-5xl mx-auto -mt-32">
 	<div class="mx-0 sm:mx-6">
-		<div class="bg-white rounded w-full p-6 md:p-20 text-gray-800">
-			<h1
-				class="text-center font-bold break-normal text-gray-800 text-2xl
-				md:text-3xl">
-				{post.title}
-			</h1>
-
-			<div class="text-m md:text-l">
-				{@html post.html}
-			</div>
-
-			<p class="text-right mt-4 text-xs">
-				<em>Last modified: {post.date}</em>
-			</p>
+		<div
+			class="bg-white rounded w-full p-6 md:p-24 text-xl md:text-2xl
+			text-gray-800">
+			{@html post.html}
 		</div>
 	</div>
 </div>

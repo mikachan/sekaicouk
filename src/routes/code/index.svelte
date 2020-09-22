@@ -1,6 +1,6 @@
 <script context="module">
 	export function preload({ params, query }) {
-		return this.fetch(`love.json`)
+		return this.fetch(`code.json`)
 			.then(r => r.json())
 			.then(posts => {
 				return { posts };
@@ -9,9 +9,6 @@
 </script>
 
 <script>
-	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import { heart } from 'svelte-awesome/icons';
-
 	export let posts;
 </script>
 
@@ -26,10 +23,10 @@
 </style>
 
 <svelte:head>
-	<title>Love</title>
+	<title>Code</title>
 </svelte:head>
 
-<h1>Love</h1>
+<h1>Code</h1>
 
 <div class="flex flex-wrap justify-between -mx-6">
 	{#each posts as post}
@@ -39,7 +36,7 @@
 				overflow-hidden shadow-lg">
 				<a
 					rel="prefetch"
-					href="love/{post.slug}"
+					href="photography/{post.slug}"
 					class="flex flex-wrap no-underline hover:no-underline">
 					<p class="w-full text-gray-600 text-xs md:text-sm px-6">
 						{post.date}
@@ -56,10 +53,12 @@
 				class="flex-none mt-auto bg-white rounded-b rounded-t-none
 				overflow-hidden shadow-lg p-6">
 				<div class="flex items-center justify-between">
-					<Icon
-						data={heart}
-						class="fill-current"
-						style="fill: grey;" />
+					<img
+						class="w-8 h-8 rounded-full mr-4 avatar"
+						data-tippy-content="Sarah Norris"
+						src="https://www.gravatar.com/avatar/5ce67f17b3cb5143ebc6ba880164d1a2?s=64"
+						alt="Sarah"
+						tabindex="0" />
 					<p class="text-gray-600 text-xs md:text-sm">
 						{post.category}
 					</p>

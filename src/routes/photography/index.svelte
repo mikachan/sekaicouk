@@ -1,6 +1,6 @@
 <script context="module">
 	export function preload({ params, query }) {
-		return this.fetch(`blog.json`)
+		return this.fetch(`photography.json`)
 			.then(r => r.json())
 			.then(posts => {
 				return { posts };
@@ -23,10 +23,10 @@
 </style>
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Photography</title>
 </svelte:head>
 
-<h1>Blog</h1>
+<h1>Photography</h1>
 
 <div class="flex flex-wrap justify-between -mx-6">
 	{#each posts as post}
@@ -36,7 +36,7 @@
 				overflow-hidden shadow-lg">
 				<a
 					rel="prefetch"
-					href="blog/{post.slug}"
+					href="photography/{post.slug}"
 					class="flex flex-wrap no-underline hover:no-underline">
 					<p class="w-full text-gray-600 text-xs md:text-sm px-6">
 						{post.date}
