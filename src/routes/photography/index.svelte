@@ -1,15 +1,15 @@
 <script context="module">
-	export function preload({ params, query }) {
-		return this.fetch(`photography.json`)
-			.then(r => r.json())
-			.then(posts => {
-				return { posts };
-			});
-	}
+	// export function preload({ params, query }) {
+	// 	return this.fetch(`photography.json`)
+	// 		.then(r => r.json())
+	// 		.then(posts => {
+	// 			return { posts };
+	// 		});
+	// }
 </script>
 
 <script>
-	export let posts;
+	// export let posts;
 </script>
 
 <style>
