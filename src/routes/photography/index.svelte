@@ -28,11 +28,9 @@
 
 <h1>Photography</h1>
 
-{#if posts.length < 1}
-	<p>Coming soon.</p>
-{/if}
+<p>Coming soon.</p>
 
-<div class="flex flex-wrap justify-between -mx-6">
+<!-- <div class="flex flex-wrap justify-between -mx-6">
 	{#each posts as post}
 		<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
 			<div
@@ -70,4 +68,4 @@
 			</div>
 		</div>
 	{/each}
-</div>
+</div> -->

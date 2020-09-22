@@ -40,7 +40,7 @@
 				overflow-hidden shadow-lg">
 				<a
 					rel="prefetch"
-					href="photography/{post.slug}"
+					href="code/{post.slug}"
 					class="flex flex-wrap no-underline hover:no-underline">
 					<p class="w-full text-gray-600 text-xs md:text-sm px-6">
 						{post.date}
