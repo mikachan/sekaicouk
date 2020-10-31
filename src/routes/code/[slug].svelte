@@ -70,7 +70,7 @@
 	<h1 class="font-bold break-normal text-3xl md:text-5xl">{post.title}</h1>
 </div>
 
-<div class="container max-w-5xl mx-auto -mt-32">
+<div class="container max-w-5xl mx-auto">
 	<div class="mx-0 sm:mx-6">
 		<div
 			class="bg-white rounded w-full p-6 md:p-24 text-xl md:text-2xl

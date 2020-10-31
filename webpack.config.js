@@ -11,7 +11,7 @@ const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 
 const preprocessOptions = { postcss: true };
-const svelteImageoptions = {};
+const svelteImageoptions = { placeholder: 'blur' };
 
 module.exports = {
 	client: {
