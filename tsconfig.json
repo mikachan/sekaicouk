@@ -19,7 +19,7 @@
             "svelte",
             "@sapper"
         ],
-        "typeRoots": ["typings"]
+        "typeRoots": ["types"]
     },
     "include": [
         "src/**/*",
