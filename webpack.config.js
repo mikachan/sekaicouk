@@ -7,7 +7,7 @@ const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 
 const alias = { svelte: path.resolve('node_modules', 'svelte') };
-const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
+const extensions = ['.mjs', '.ts', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 
 const preprocessOptions = { postcss: true };
@@ -34,6 +34,11 @@ module.exports = {
 							],
 						},
 					},
+				},
+				{
+					test: /\.ts?$/,
+					use: 'ts-loader',
+					exclude: /node_modules/,
 				},
 			],
 		},

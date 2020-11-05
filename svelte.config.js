@@ -1,0 +1,10 @@
+const sveltePreprocess = require('svelte-preprocess');
+
+module.exports.preprocess = sveltePreprocess({
+	postcss: {
+		plugins: [require('autoprefixer')],
+	},
+	scss: true,
+	typescript: true,
+	sourceMap: true,
+});

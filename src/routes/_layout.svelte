@@ -1,11 +1,11 @@
-<script>
+<script lang="typescript">
 	import Nav from '../components/Nav.svelte';
 	import Background from '../components/Background.svelte';
 	import GoogleAnalytics from 'sapper-google-analytics/GoogleAnalytics.svelte';
 	import { stores } from '@sapper/app';
 
-	export let segment;
-	let ga_measurment_id = 'UA-7281616-1';
+	export let segment: string | undefined;
+	let ga_measurment_id: string = 'UA-7281616-1';
 </script>
 
 <style>

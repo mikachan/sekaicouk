@@ -1,6 +1,6 @@
-<script>
-	export let status;
-	export let error;
+<script lang="typescript">
+	export let status: string;
+	export let error: object;
 
 	const dev = process.env.NODE_ENV === 'development';
 </script>
