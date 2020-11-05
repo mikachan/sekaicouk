@@ -13,9 +13,9 @@
 </style>
 
 <svelte:head>
-	<title>Words</title>
+	<title>Quotes</title>
 </svelte:head>
 
-<h1>Words</h1>
+<h1>Quotes</h1>
 
 <p>Coming soon.</p>

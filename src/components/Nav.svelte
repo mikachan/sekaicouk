@@ -90,9 +90,9 @@
 		</li>
 		<li>
 			<a
-				aria-current={segment === 'words' ? 'page' : undefined}
-				href="words">
-				words
+				aria-current={segment === 'quotes' ? 'page' : undefined}
+				href="quotes">
+				quotes
 			</a>
 		</li>
 	</ul>
