@@ -1,15 +1,15 @@
 <script context="module">
-	// export function preload({ params, query }) {
-	// 	return this.fetch(`photography.json`)
-	// 		.then(r => r.json())
-	// 		.then(posts => {
-	// 			return { posts };
-	// 		});
-	// }
+	export function preload({ params, query }) {
+		return this.fetch('https://www.instagram.com/mikachan_/?__a=1')
+			.then(r => r.json())
+			.then(pics => {
+				return { pics };
+			});
+	}
 </script>
 
 <script>
-	// export let posts;
+	export let pics;
 </script>
 
 <style>
@@ -28,44 +28,15 @@
 
 <h1>Photography</h1>
 
-<p>Coming soon.</p>
-
-<!-- <div class="flex flex-wrap justify-between -mx-6">
-	{#each posts as post}
-		<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+<div class="flex flex-wrap justify-between">
+	{#each pics.graphql.user.edge_owner_to_timeline_media.edges as pic}
+		<div class="w-full md:w-1/3 p-2 flex flex-col flex-grow flex-shrink">
 			<div
-				class="flex-1 pt-6 bg-white rounded-t rounded-b-none
-				overflow-hidden shadow-lg">
-				<a
-					rel="prefetch"
-					href="photography/{post.slug}"
-					class="flex flex-wrap no-underline hover:no-underline">
-					<p class="w-full text-gray-600 text-xs md:text-sm px-6">
-						{post.date}
-					</p>
-					<div class="w-full font-bold text-xl text-gray-900 px-6">
-						{post.title}
-					</div>
-					<p class="text-gray-800 font-serif text-base px-6 mb-5">
-						{post.intro}
-					</p>
+				class="flex-1 rounded overflow-hidden shadow-lg">
+				<a href={`http://www.instagram.com/p/${pic.node.shortcode}`} target="_blank">
+					<img src={pic.node.thumbnail_src} alt={pic.node.accessibility_caption} />
 				</a>
-			</div>
-			<div
-				class="flex-none mt-auto bg-white rounded-b rounded-t-none
-				overflow-hidden shadow-lg p-6">
-				<div class="flex items-center justify-between">
-					<img
-						class="w-8 h-8 rounded-full mr-4 avatar"
-						data-tippy-content="Sarah Norris"
-						src="https://www.gravatar.com/avatar/5ce67f17b3cb5143ebc6ba880164d1a2?s=64"
-						alt="Sarah"
-						tabindex="0" />
-					<p class="text-gray-600 text-xs md:text-sm">
-						{post.category}
-					</p>
-				</div>
 			</div>
 		</div>
 	{/each}
-</div> -->
+</div>
