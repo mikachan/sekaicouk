@@ -69,23 +69,9 @@
 		</li>
 		<li>
 			<a
-				aria-current={segment === 'photography' ? 'page' : undefined}
-				href="photography">
-				photography
-			</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'code' ? 'page' : undefined}
-				href="code">
-				code
-			</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'music' ? 'page' : undefined}
-				href="music">
-				music
+				aria-current={segment === 'pics' ? 'page' : undefined}
+				href="pics">
+				pics
 			</a>
 		</li>
 		<li>

@@ -23,10 +23,10 @@
 </style>
 
 <svelte:head>
-	<title>Photography</title>
+	<title>Pics</title>
 </svelte:head>
 
-<h1>Photography</h1>
+<h1>Pics</h1>
 
 <div class="flex flex-wrap justify-between">
 	{#each pics.graphql.user.edge_owner_to_timeline_media.edges as pic}
