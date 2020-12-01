@@ -5,7 +5,7 @@ import path from 'path';
 
 const getPost = (fileName) =>
 	fs.readFileSync(
-		path.resolve('./src/content/photography', `${fileName}.md`),
+		path.resolve('./src/content/pics', `${fileName}.md`),
 		'utf-8'
 	);
 
