@@ -30,7 +30,7 @@
 
 <div class="flex flex-wrap justify-between">
 	{#each photos.graphql.user.edge_owner_to_timeline_media.edges as photo}
-		<div class="w-full md:w-1/3 p-2 flex flex-col flex-grow flex-shrink">
+		<div class="w-full sm:w-1/3 p-2 flex flex-col flex-grow flex-shrink">
 			<div
 				class="flex-1 rounded overflow-hidden shadow-lg">
 				<a href={`http://www.instagram.com/p/${photo.node.shortcode}`} target="_blank">
