@@ -7,5 +7,3 @@ package-lock.json
 static/index.css
 __sapper__
 .DS_Store
-
-static/
