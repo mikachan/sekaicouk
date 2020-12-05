@@ -69,9 +69,9 @@
 		</li>
 		<li>
 			<a
-				aria-current={segment === 'pics' ? 'page' : undefined}
-				href="pics">
-				pics
+				aria-current={segment === 'photos' ? 'page' : undefined}
+				href="photos">
+				photos
 			</a>
 		</li>
 		<li>
