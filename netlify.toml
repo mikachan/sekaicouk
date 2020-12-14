@@ -7,7 +7,8 @@
   to = "https://sekai.co.uk"
   status = 301
   force = true
-
+  
+[[redirects]]
   from = "https://sekai.co.uk/you"
   to = "https://you.sekai.co.uk"
   status = 301
