@@ -9,8 +9,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: 'gatsby-starter-default',
-				short_name: 'starter',
+				name: 'sekai.co.uk',
+				short_name: 'sekai.co.uk',
 				start_url: '/',
 				background_color: '#663399',
 				theme_color: '#663399',
