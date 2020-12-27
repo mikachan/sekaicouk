@@ -1,53 +1,35 @@
 {
-	"name": "sekai.co.uk",
-	"description": "sekai.co.uk",
-	"version": "2.0.0",
-	"author": "Sarah Norris",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mikachan/sekaicouk"
-	},
-	"scripts": {
-		"build": "npm run build:tailwind && sapper build",
-		"watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
-		"build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
-		"export": "sapper export",
-		"start": "run-p start:dev watch:tailwind",
-		"start:build": "node __sapper__/build",
-		"start:dev": "sapper dev",
-		"test": ""
-	},
-	"dependencies": {
-		"@types/compression": "^1.7.0",
-		"@types/node": "^14.14.6",
-		"@types/polka": "^0.5.1",
-		"compression": "^1.7.1",
-		"gray-matter": "^4.0.2",
-		"highlight.js": "^10.3.2",
-		"marked": "^1.2.3",
-		"polka": "next",
-		"sapper-google-analytics": "^1.0.2",
-		"sirv": "^1.0.7",
-		"svelte-awesome": "^2.3.0"
-	},
-	"devDependencies": {
-		"@fullhuman/postcss-purgecss": "^2.3.0",
-		"cssnano": "^4.1.10",
-		"eslint": "^7.12.1",
-		"eslint-plugin-svelte3": "^2.7.3",
-		"npm-run-all": "^4.1.5",
-		"postcss": "^7.0.32",
-		"postcss-cli": "^7.1.1",
-		"postcss-load-config": "^2.1.0",
-		"sapper": "^0.28.10",
-		"svelte": "^3.29.4",
-		"svelte-image": "^0.2.6",
-		"svelte-loader": "^2.9.0",
-		"svelte-preprocess": "^4.5.2",
-		"tailwindcss": "^1.9.6",
-		"ts-loader": "^8.0.9",
-		"typescript": "^4.0.5",
-		"webpack": "^4.43.0"
-	}
+  "name": "sekai.co.uk",
+  "description": "sekai.co.uk",
+  "version": "1.0.0",
+  "author": "Sarah Norris",
+  "dependencies": {
+    "gatsby": "^2.19.5",
+    "gatsby-plugin-google-analytics": "^2.8.0",
+    "gatsby-plugin-manifest": "^2.2.38",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sass": "^2.1.27",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "start": "npm run develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikachan/sekaicouk"
+  }
 }
