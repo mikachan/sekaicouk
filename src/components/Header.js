@@ -1,5 +1,15 @@
+import { OutboundLink, trackCustomEvent } from 'gatsby-plugin-google-analytics';
+
 import PropTypes from 'prop-types';
 import React from 'react';
+
+const trackSectionView = sectionName => {
+	trackCustomEvent({
+		category: 'Main Navigation',
+		action: 'Click',
+		label: sectionName ? sectionName : 'Unknown',
+	});
+};
 
 const Header = props => (
 	<header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -21,6 +31,7 @@ const Header = props => (
 					<button
 						onClick={() => {
 							props.onOpenArticle('about');
+							trackSectionView('About');
 						}}
 					>
 						About
@@ -30,6 +41,7 @@ const Header = props => (
 					<button
 						onClick={() => {
 							props.onOpenArticle('contact');
+							trackSectionView('Contact');
 						}}
 					>
 						Contact
@@ -37,9 +49,12 @@ const Header = props => (
 				</li>
 				<li>
 					<button>
-						<a href="https://you.sekai.co.uk/" target="_blank">
+						<OutboundLink
+							href="https://you.sekai.co.uk/"
+							target="_blank"
+						>
 							Forget-me-not
-						</a>
+						</OutboundLink>
 					</button>
 				</li>
 			</ul>
