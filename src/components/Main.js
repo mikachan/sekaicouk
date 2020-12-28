@@ -1,5 +1,7 @@
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import PropTypes from 'prop-types';
 import React from 'react';
+
 // import pic01 from '../images/pic01.jpg';
 
 class Main extends React.Component {
@@ -52,54 +54,54 @@ class Main extends React.Component {
 					<h2 className="major">Contact</h2>
 					<ul className="icons">
 						<li>
-							<a
+							<OutboundLink
 								href="https://www.linkedin.com/in/sarahnorris88"
 								target="_blank"
 								rel="noreferrer"
 								className="icon fa-linkedin"
 							>
 								<span className="label">LinkedIn</span>
-							</a>
+							</OutboundLink>
 						</li>
 						<li>
-							<a
+							<OutboundLink
 								href="https://www.twitter.com/mikachan_"
 								target="_blank"
 								rel="noreferrer"
 								className="icon fa-twitter"
 							>
 								<span className="label">Twitter</span>
-							</a>
+							</OutboundLink>
 						</li>
 						<li>
-							<a
+							<OutboundLink
 								href="https://last.fm/user/mikachan_"
 								target="_blank"
 								rel="noreferrer"
 								className="icon fa-lastfm"
 							>
 								<span className="label">Last.fm</span>
-							</a>
+							</OutboundLink>
 						</li>
 						<li>
-							<a
+							<OutboundLink
 								href="https://www.instagram.com/mikachan_/"
 								target="_blank"
 								rel="noreferrer"
 								className="icon fa-instagram"
 							>
 								<span className="label">Instagram</span>
-							</a>
+							</OutboundLink>
 						</li>
 						<li>
-							<a
+							<OutboundLink
 								href="https://github.com/mikachan"
 								target="_blank"
 								rel="noreferrer"
 								className="icon fa-github"
 							>
 								<span className="label">Github</span>
-							</a>
+							</OutboundLink>
 						</li>
 					</ul>
 					{close}

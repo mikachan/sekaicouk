@@ -1,3 +1,4 @@
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -5,9 +6,13 @@ const Footer = props => (
 	<footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
 		<p className="copyright">
 			Built with:{' '}
-			<a href="https://www.gatsbyjs.org/" target="_blank">
+			<OutboundLink
+				href="https://www.gatsbyjs.org/"
+				target="_blank"
+				rel="noreferrer"
+			>
 				Gatsby.js
-			</a>
+			</OutboundLink>
 		</p>
 	</footer>
 );
