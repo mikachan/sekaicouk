@@ -5,13 +5,13 @@ import React from 'react';
 const Footer = props => (
 	<footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
 		<p className="copyright">
-			Built with:{' '}
+			&copy; 2003-2021. Built with{' '}
 			<OutboundLink
 				href="https://www.gatsbyjs.org/"
 				target="_blank"
 				rel="noreferrer"
 			>
-				Gatsby.js
+				Gatsby
 			</OutboundLink>
 		</p>
 	</footer>
