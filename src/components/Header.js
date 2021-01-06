@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const trackSectionView = sectionName => {
-	typeof window !== 'undefined' &&
+	if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined')
 		window.gtag('event', 'click', {
 			event_category: 'Main Navigation',
 			event_label: sectionName ? sectionName : 'Unknown',

@@ -26,10 +26,6 @@ module.exports = {
 				gtagConfig: {
 					send_page_view: true,
 				},
-				pluginConfig: {
-					head: false,
-					respectDNT: false,
-				},
 			},
 		},
 	],
