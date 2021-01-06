@@ -20,10 +20,13 @@ module.exports = {
 		},
 		'gatsby-plugin-sass',
 		{
-			resolve: `gatsby-plugin-google-analytics`,
+			resolve: `gatsby-plugin-google-gtag`,
 			options: {
-				trackingId: 'UA-7281616-1',
-				head: false,
+				trackingIds: ['G-YNK25WY0X1'],
+				pluginConfig: {
+					head: false,
+					respectDNT: true,
+				},
 			},
 		},
 	],

@@ -1,4 +1,4 @@
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import PropTypes from 'prop-types';
 import React from 'react';
 

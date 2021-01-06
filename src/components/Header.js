@@ -1,14 +1,13 @@
-import { OutboundLink, trackCustomEvent } from 'gatsby-plugin-google-analytics';
-
+import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const trackSectionView = sectionName => {
-	trackCustomEvent({
-		category: 'Main Navigation',
-		action: 'Click',
-		label: sectionName ? sectionName : 'Unknown',
-	});
+	typeof window !== 'undefined' &&
+		window.gtag('event', 'click', {
+			event_category: 'Main Navigation',
+			event_label: sectionName ? sectionName : 'Unknown',
+		});
 };
 
 const Header = props => (
