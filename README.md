@@ -5,7 +5,7 @@
 
 ## Intro
 
-Personal site built using Gatsby.
+Personal site built using Gatsby and the [Dimension theme](https://github.com/codebushi/gatsby-starter-dimension).
 
 ## Site History
 
