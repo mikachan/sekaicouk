@@ -6,12 +6,13 @@ import React from 'react';
 
 function Main(props) {
 	let close = (
-		<div
+		<button
 			className="close"
 			onClick={() => {
 				props.onCloseArticle();
 			}}
-		></div>
+			aria-label="Close"
+		/>
 	);
 
 	return (
