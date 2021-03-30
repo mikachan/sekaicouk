@@ -22,7 +22,7 @@ function About(props) {
 					target="_blank"
 					rel="noreferrer"
 				>
-					Lancashire, UK
+					Lancashire
 				</OutboundLink>{' '}
 				with her dog, Thora.
 			</p>
@@ -33,6 +33,15 @@ function About(props) {
 				around 2000 and has been paid for doing it since 2008. She
 				currently specialises in front end development, including React
 				and Svelte.
+			</p>
+
+			<p>
+				Some of her favourite things are peanut butter, dragons, animals
+				and pretty much anything Japanese, especially{' '}
+				<OutboundLink href="https://you.sekai.co.uk" target="_blank">
+					this guitarist
+				</OutboundLink>
+				.
 			</p>
 
 			<p>
@@ -52,15 +61,6 @@ function About(props) {
 					rel="noreferrer"
 				>
 					Wigan STEAM code club
-				</OutboundLink>
-				.
-			</p>
-
-			<p>
-				Some of her favourite things are peanut butter, dragons, animals
-				and pretty much anything Japanese, like{' '}
-				<OutboundLink href="https://you.sekai.co.uk" target="_blank">
-					this guitarist
 				</OutboundLink>
 				.
 			</p>
