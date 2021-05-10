@@ -1,6 +1,7 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import React from 'react';
 // import pic01 from '../images/pic01.jpg';
+import thora from '../images/thora.jpg';
 
 function About(props) {
 	return (
@@ -12,9 +13,7 @@ function About(props) {
 			style={{ display: 'none' }}
 		>
 			<h2 className="major">About</h2>
-			<span className="image main">
-				{/* <img src={pic01} alt="" /> */}
-			</span>
+
 			<p>
 				Sarah is a relatively geeky girl who lives in{' '}
 				<OutboundLink
@@ -64,6 +63,10 @@ function About(props) {
 				</OutboundLink>
 				.
 			</p>
+
+			<span className="image main">
+				<img src={thora} alt="Thora" />
+			</span>
 
 			{props.close}
 		</article>
