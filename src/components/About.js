@@ -27,16 +27,24 @@ function About(props) {
 			</p>
 
 			<p>
-				She is a self-taught web developer with a background in
+				She is a self-taught Software Engineer with a background in
 				marketing and analytics. She's been building websites since
 				around 2000 and has been paid for doing it since 2008. She
-				currently specialises in front end development, including React
-				and Svelte.
+				specialises in front end web development, and is currently a
+				full-time sponsored open-source contributor for WordPress. Come
+				say hi on{' '}
+				<OutboundLink
+					href="https://github.com/mikachan"
+					target="_blank"
+				>
+					GitHub
+				</OutboundLink>
+				!
 			</p>
 
 			<p>
-				Some of her favourite things are peanut butter, dragons, animals
-				and pretty much anything Japanese, especially{' '}
+				Some of her favourite things are peanut butter, dragons,
+				cowboys, animals and pretty much anything Japanese, especially{' '}
 				<OutboundLink href="https://you.sekai.co.uk" target="_blank">
 					this guitarist
 				</OutboundLink>
@@ -45,7 +53,8 @@ function About(props) {
 
 			<p>
 				In her spare time she enjoys walking, photography, traveling,
-				occasional bass guitar and video games. She also volunteers at{' '}
+				swimming, watching films, occasional bass guitar and video
+				games. She also volunteers at{' '}
 				<OutboundLink
 					href="https://www.parbolddouglasmusic.org/"
 					target="_blank"
@@ -66,6 +75,7 @@ function About(props) {
 
 			<span className="image main">
 				<img src={thora} alt="Thora" />
+				<caption>Thora</caption>
 			</span>
 
 			{props.close}
