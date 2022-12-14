@@ -10,7 +10,7 @@ function Contact(props) {
 			}`}
 			style={{ display: 'none' }}
 		>
-			<h2 className="major">Contact</h2>
+			<h2 className="major">Social Media</h2>
 			<ul className="icons">
 				<li>
 					<OutboundLink
@@ -20,6 +20,16 @@ function Contact(props) {
 						className="icon fa-github"
 					>
 						<span className="label">GitHub</span>
+					</OutboundLink>
+				</li>
+				<li>
+					<OutboundLink
+						href="https://profiles.wordpress.org/mikachan/"
+						target="_blank"
+						rel="noreferrer"
+						className="icon fa-wordpress"
+					>
+						<span className="label">WordPress</span>
 					</OutboundLink>
 				</li>
 				<li>

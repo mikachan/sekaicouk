@@ -2,7 +2,7 @@ import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const trackSectionView = sectionName => {
+const trackSectionView = (sectionName) => {
 	if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined')
 		window.gtag('event', 'click', {
 			event_category: 'Main Navigation',
@@ -10,7 +10,7 @@ const trackSectionView = sectionName => {
 		});
 };
 
-const Header = props => (
+const Header = (props) => (
 	<header id="header" style={props.timeout ? { display: 'none' } : {}}>
 		<div className="logo">
 			<span className="icon fa-heart"></span>
@@ -19,9 +19,54 @@ const Header = props => (
 			<div className="inner">
 				<h1>sekai.co.uk</h1>
 				<p>
-					Personal site of Sarah Norris; web developer &amp; wannabe
-					hippy.
+					Personal site of Sarah Norris; Software Engineer &amp;
+					wannabe hippy.
 				</p>
+
+				<div>
+					<ul className="icons" style={{ marginBottom: 0 }}>
+						<li>
+							<OutboundLink
+								href="https://github.com/mikachan"
+								target="_blank"
+								rel="noreferrer"
+								className="icon fa-github"
+							>
+								<span className="label">GitHub</span>
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="https://profiles.wordpress.org/mikachan/"
+								target="_blank"
+								rel="noreferrer"
+								className="icon fa-wordpress"
+							>
+								<span className="label">WordPress</span>
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="https://www.linkedin.com/in/sarahnorris88"
+								target="_blank"
+								rel="noreferrer"
+								className="icon fa-linkedin"
+							>
+								<span className="label">LinkedIn</span>
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="https://www.twitter.com/mikachan_"
+								target="_blank"
+								rel="noreferrer"
+								className="icon fa-twitter"
+							>
+								<span className="label">Twitter</span>
+							</OutboundLink>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<nav>
@@ -43,7 +88,17 @@ const Header = props => (
 							trackSectionView('Contact');
 						}}
 					>
-						Contact
+						Socials
+					</button>
+				</li>
+				<li>
+					<button>
+						<OutboundLink
+							href="https://blog.sekai.co.uk/"
+							target="_blank"
+						>
+							Blog
+						</OutboundLink>
 					</button>
 				</li>
 				<li>
