@@ -15,7 +15,7 @@ function About(props) {
 			<h2 className="major">About</h2>
 
 			<p>
-				Sarah is a relatively geeky girl who lives in{' '}
+				Hello! I'm Sarah and I live in{' '}
 				<OutboundLink
 					href="https://www.visitlancashire.com/"
 					target="_blank"
@@ -23,16 +23,15 @@ function About(props) {
 				>
 					Lancashire
 				</OutboundLink>{' '}
-				with her dog, Thora.
+				with my dog, Thora.
 			</p>
 
 			<p>
-				She is a self-taught Software Engineer with a background in
-				marketing and analytics. She's been building websites since
-				around 2000 and has been paid for doing it since 2008. She
-				specialises in front end web development, and is currently a
-				full-time sponsored open-source contributor for WordPress. Come
-				say hi on{' '}
+				I'm a self-taught Software Engineer with a background in
+				marketing and analytics. I've been building websites since
+				around 2000 and I've been paid for doing it since 2008. I
+				specialise in front end web development, and I'm currently a
+				sponsored open-source contributor for WordPress. Come say hi on{' '}
 				<OutboundLink
 					href="https://github.com/mikachan"
 					target="_blank"
@@ -43,8 +42,8 @@ function About(props) {
 			</p>
 
 			<p>
-				Some of her favourite things are peanut butter, dragons,
-				cowboys, animals and pretty much anything Japanese, especially{' '}
+				Some of my favourite things are peanut butter, dragons, cowboys,
+				animals and pretty much anything Japanese, especially{' '}
 				<OutboundLink href="https://you.sekai.co.uk" target="_blank">
 					this guitarist
 				</OutboundLink>
@@ -52,9 +51,9 @@ function About(props) {
 			</p>
 
 			<p>
-				In her spare time she enjoys walking, photography, traveling,
+				In my spare time I enjoy walking, photography, traveling,
 				swimming, watching films, occasional bass guitar and video
-				games. She also volunteers at{' '}
+				games. I also volunteer at{' '}
 				<OutboundLink
 					href="https://www.parbolddouglasmusic.org/"
 					target="_blank"
@@ -75,7 +74,6 @@ function About(props) {
 
 			<span className="image main">
 				<img src={thora} alt="Thora" />
-				<caption>Thora</caption>
 			</span>
 
 			{props.close}
