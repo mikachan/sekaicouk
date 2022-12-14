@@ -72,6 +72,16 @@ function Contact(props) {
 						<span className="label">Instagram</span>
 					</OutboundLink>
 				</li>
+				<li>
+					<OutboundLink
+						href="https://www.tumblr.com/blog/mikachan88-blog"
+						target="_blank"
+						rel="noreferrer"
+						className="icon fa-tumblr"
+					>
+						<span className="label">Tumblr</span>
+					</OutboundLink>
+				</li>
 			</ul>
 			{props.close}
 		</article>
