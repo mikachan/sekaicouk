@@ -4,16 +4,7 @@ import React from 'react';
 
 const Footer = (props) => (
 	<footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
-		<p className="copyright">
-			&copy; 2003-2022. Built with{' '}
-			<OutboundLink
-				href="https://www.gatsbyjs.org/"
-				target="_blank"
-				rel="noreferrer"
-			>
-				Gatsby
-			</OutboundLink>
-		</p>
+		<p className="copyright">&copy; 2003-2022.</p>
 	</footer>
 );
 
