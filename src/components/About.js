@@ -43,7 +43,8 @@ function About(props) {
 
 			<p>
 				Some of my favourite things are peanut butter, dragons, cowboys,
-				animals and pretty much anything Japanese, especially{' '}
+				animals, rollercoasters, and pretty much anything Japanese,
+				especially{' '}
 				<OutboundLink href="https://you.sekai.co.uk" target="_blank">
 					this guitarist
 				</OutboundLink>
@@ -52,7 +53,7 @@ function About(props) {
 
 			<p>
 				In my spare time I enjoy walking, photography, traveling,
-				swimming, watching films, occasional bass guitar and video
+				swimming, watching films, occasional bass guitar, and video
 				games. I also volunteer at{' '}
 				<OutboundLink
 					href="https://www.parbolddouglasmusic.org/"
