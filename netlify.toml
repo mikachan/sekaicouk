@@ -15,7 +15,7 @@
   force = true
 
 [[redirects]]
-  from = "https://you.sekai.co.uk"
-  to = "https://sekai.co.uk/you"
+  from = "https://sekai.co.uk/you"
+  to = "https://you.sekai.co.uk"
   status = 301
   force = true
