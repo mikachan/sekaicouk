@@ -12,6 +12,11 @@ function EmbracingOpenSource(props) {
 		>
 			<h2 className="major">Embracing Open Source</h2>
 
+			<p>
+				Thank you for attending my talk! Please find below the open
+				source resources list.
+			</p>
+
 			<h3>Helpful links for getting started</h3>
 
 			<ul>
