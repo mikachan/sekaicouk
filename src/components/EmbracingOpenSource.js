@@ -27,6 +27,25 @@ function EmbracingOpenSource(props) {
 					>
 						First Timers Only
 					</OutboundLink>
+					: great all-round resource
+				</li>
+				<li>
+					<OutboundLink
+						href="https://www.codetriage.com/"
+						target="_blank"
+					>
+						codetriage.com
+					</OutboundLink>
+					: find open source projects to contribute to
+				</li>
+				<li>
+					<OutboundLink
+						href="https://github.com/open-sauced/open-sauced"
+						target="_blank"
+					>
+						Open Sauced
+					</OutboundLink>
+					: structured onboarding for new contributors
 				</li>
 				<li>
 					<OutboundLink
@@ -35,6 +54,7 @@ function EmbracingOpenSource(props) {
 					>
 						opensource.guide
 					</OutboundLink>
+					: learn more about how to contribute to open source
 				</li>
 				<li>
 					<OutboundLink
@@ -82,21 +102,6 @@ function EmbracingOpenSource(props) {
 			<ul>
 				<li>
 					<OutboundLink
-						href="https://github.com/facebook/react"
-						target="_blank"
-					>
-						React
-					</OutboundLink>{' '}
-					&{' '}
-					<OutboundLink
-						href="https://github.com/gatsbyjs/gatsby"
-						target="_blank"
-					>
-						Gatsby
-					</OutboundLink>
-				</li>
-				<li>
-					<OutboundLink
 						href="https://github.com/sveltejs/svelte"
 						target="_blank"
 					>
@@ -108,6 +113,21 @@ function EmbracingOpenSource(props) {
 						target="_blank"
 					>
 						SvelteKit
+					</OutboundLink>
+				</li>
+				<li>
+					<OutboundLink
+						href="https://github.com/facebook/react"
+						target="_blank"
+					>
+						React
+					</OutboundLink>{' '}
+					&{' '}
+					<OutboundLink
+						href="https://github.com/gatsbyjs/gatsby"
+						target="_blank"
+					>
+						Gatsby
 					</OutboundLink>
 				</li>
 				<li>
@@ -128,6 +148,8 @@ function EmbracingOpenSource(props) {
 			</ul>
 
 			<h3>Links to projects I'm working on</h3>
+
+			<p>I'm happy to be pinged to answer questions or review a PR.</p>
 
 			<ul>
 				<li>
