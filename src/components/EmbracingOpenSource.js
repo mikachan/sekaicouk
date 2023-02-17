@@ -22,21 +22,12 @@ function EmbracingOpenSource(props) {
 			<ul>
 				<li>
 					<OutboundLink
-						href="https://www.firsttimersonly.com/"
+						href="https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/"
 						target="_blank"
 					>
-						First Timers Only
+						FreeCodeCamp: Beginnger's Guide on Contributing to Open
+						Sourse
 					</OutboundLink>
-					: great all-round resource
-				</li>
-				<li>
-					<OutboundLink
-						href="https://www.codetriage.com/"
-						target="_blank"
-					>
-						codetriage.com
-					</OutboundLink>
-					: find open source projects to contribute to
 				</li>
 				<li>
 					<OutboundLink
@@ -66,6 +57,82 @@ function EmbracingOpenSource(props) {
 				</li>
 			</ul>
 
+			<h3>Finding a Project to Contribute to</h3>
+
+			<ul>
+				<li>
+					<OutboundLink
+						href="https://www.firsttimersonly.com/"
+						target="_blank"
+					>
+						First Timers Only
+					</OutboundLink>
+					: great all-round resource
+				</li>
+				<li>
+					<OutboundLink
+						href="https://www.codetriage.com/"
+						target="_blank"
+					>
+						codetriage.com
+					</OutboundLink>
+					: find open source projects to contribute to
+				</li>
+				<li>
+					<OutboundLink
+						href="https://github.com/MunGell/awesome-for-beginners"
+						target="_blank"
+					>
+						Awesome for Beginners
+					</OutboundLink>
+					: a curated list of first-time projects for beginners,
+					listed by language
+				</li>
+				<li>
+				<OutboundLink
+						href="https://up-for-grabs.net/"
+						target="_blank"
+					>
+						Up for Grabs
+					</OutboundLink>: another list!
+				
+				</li>
+				<li>
+					<OutboundLink
+						href="https://github.com/firstcontributions/first-contributions"
+						target="_blank"
+					>
+						first contributions
+					</OutboundLink>
+					: guides beginners into making their first contribution
+				</li>
+				<li>
+					<OutboundLink
+						href="https://contributor.ninja/"
+						target="_blank"
+					>
+						contributor.ninja
+					</OutboundLink>
+					: a list of issues categorised by language
+				</li>
+				<li>
+					<OutboundLink
+						href="https://opensourcefriday.com/"
+						target="_blank"
+					>
+						opensourcefriday.com
+					</OutboundLink>
+				</li>
+				<li>
+					<OutboundLink
+						href="https://hacktoberfest.com/"
+						target="_blank"
+					>
+						hacktoberfest.com
+					</OutboundLink>
+				</li>
+			</ul>
+
 			<h3>Recommended reading</h3>
 
 			<ul>
@@ -83,7 +150,16 @@ function EmbracingOpenSource(props) {
 						href="https://www.oreilly.com/openbook/freedom/ch00.html"
 						target="_blank"
 					>
-						Crusade for Free Software ebook
+						Crusade for Free Software
+					</OutboundLink>
+				</li>
+				<li>
+					Eric Steven Raymond's{' '}
+					<OutboundLink
+						href="http://www.catb.org/esr/writings/homesteading/cathedral-bazaar/index.html"
+						target="_blank"
+					>
+						The Cathedral and the Bazaar
 					</OutboundLink>
 				</li>
 				<li>
@@ -94,6 +170,22 @@ function EmbracingOpenSource(props) {
 						Becoming a good open-source citizen
 					</OutboundLink>{' '}
 					by Hugh Lashbrooke
+				</li>
+				<li>
+					<OutboundLink
+						href="https://www.ted.com/playlists/13/open_source_open_world"
+						target="_blank"
+					>
+						TED Talks on Open Source
+					</OutboundLink>
+				</li>
+				<li>
+					<OutboundLink
+						href="https://www.openlogic.com/resources/2023-state-open-source-report"
+						target="_blank"
+					>
+						2023 State of Open Source Report
+					</OutboundLink>
 				</li>
 			</ul>
 
