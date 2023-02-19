@@ -27,11 +27,11 @@ function About(props) {
 			</p>
 
 			<p>
-				I'm a self-taught Software Engineer with a background in
-				marketing and analytics. I've been building websites since
-				around 2000 and I've been paid for doing it since 2008. I
-				specialise in front end web development, and I'm currently a
-				sponsored open-source contributor for WordPress. Come say hi on{' '}
+				I'm a self-taught Software Engineer with a passion for data and
+				analytics. I've been building websites since around 2000 and
+				I've been paid for doing it since 2008. I specialise in front
+				end development, and I'm currently a sponsored open-source
+				contributor for WordPress. Come say hi on{' '}
 				<OutboundLink
 					href="https://github.com/mikachan"
 					target="_blank"
