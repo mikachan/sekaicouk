@@ -11,23 +11,21 @@ function EmbracingOpenSource(props) {
 			style={{ display: 'none' }}
 		>
 			<h2 className="major">Embracing Open Source</h2>
-
 			<p>
-				Thank you for attending my talk! Please find below the open
-				source resources list.
+				Thank you for attending my talk! Here is a list of resources to
+				help you get started with open source.
 			</p>
 
 			<h3>Helpful links for getting started</h3>
-
 			<ul>
 				<li>
 					<OutboundLink
 						href="https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/"
 						target="_blank"
 					>
-						FreeCodeCamp: Beginnger's Guide on Contributing to Open
-						Sourse
+						Beginnger's Guide on Contributing to Open Sourse
 					</OutboundLink>
+					: FreeCodeCamp
 				</li>
 				<li>
 					<OutboundLink
@@ -56,9 +54,7 @@ function EmbracingOpenSource(props) {
 					</OutboundLink>
 				</li>
 			</ul>
-
 			<h3>Finding a Project to Contribute to</h3>
-
 			<ul>
 				<li>
 					<OutboundLink
@@ -89,13 +85,13 @@ function EmbracingOpenSource(props) {
 					listed by language
 				</li>
 				<li>
-				<OutboundLink
+					<OutboundLink
 						href="https://up-for-grabs.net/"
 						target="_blank"
 					>
 						Up for Grabs
-					</OutboundLink>: another list!
-				
+					</OutboundLink>
+					: another list!
 				</li>
 				<li>
 					<OutboundLink
@@ -132,9 +128,7 @@ function EmbracingOpenSource(props) {
 					</OutboundLink>
 				</li>
 			</ul>
-
 			<h3>Recommended reading</h3>
-
 			<ul>
 				<li>
 					<OutboundLink
@@ -187,10 +181,16 @@ function EmbracingOpenSource(props) {
 						2023 State of Open Source Report
 					</OutboundLink>
 				</li>
+				<li>
+					<OutboundLink
+						href="https://github.blog/2020-04-09-github-protips-tips-tricks-hacks-and-secrets-from-lee-reilly/"
+						target="_blank"
+					>
+						GitHub Tips & Tricks
+					</OutboundLink>
+				</li>
 			</ul>
-
 			<h3>Projects I Recommend</h3>
-
 			<ul>
 				<li>
 					<OutboundLink
@@ -238,11 +238,15 @@ function EmbracingOpenSource(props) {
 					</OutboundLink>
 				</li>
 			</ul>
-
 			<h3>Links to projects I'm working on</h3>
-
-			<p>I'm happy to be pinged to answer questions or review a PR.</p>
-
+			<p>
+				I'm{' '}
+				<OutboundLink href="https://github.com/mikachan" target="_blank">
+					@mikachan
+				</OutboundLink>{' '}
+				on GitHub. I'm happy to be pinged to answer questions or review
+				a PR.
+			</p>
 			<ul>
 				<li>
 					Gutenberg:{' '}
@@ -280,7 +284,6 @@ function EmbracingOpenSource(props) {
 					(WordPress WASM)
 				</li>
 			</ul>
-
 			{props.close}
 		</article>
 	);
