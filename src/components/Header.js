@@ -113,6 +113,15 @@ const Header = (props) => (
 				</li>
 			</ul>
 		</nav>
+		<nav>
+			<ul>
+				<li>
+					<button>
+						<a href="/os">Embracing Open Source</a>
+					</button>
+				</li>
+			</ul>
+		</nav>
 	</header>
 );
 
