@@ -1,6 +1,5 @@
 import About from './About';
 import Contact from './Contact';
-import EmbracingOpenSource from './EmbracingOpenSource';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -23,7 +22,6 @@ function Main(props) {
 		>
 			<About {...props} close={close} />
 			<Contact {...props} close={close} />
-			<EmbracingOpenSource {...props} close={close} />
 		</div>
 	);
 }

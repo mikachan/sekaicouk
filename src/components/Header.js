@@ -116,13 +116,8 @@ const Header = (props) => (
 		<nav>
 			<ul>
 				<li>
-					<button
-						onClick={() => {
-							props.onOpenArticle('os');
-							trackSectionView('Embracing Open Source');
-						}}
-					>
-						Embracing Open Source
+					<button>
+						<a href="/os">Embracing Open Source</a>
 					</button>
 				</li>
 			</ul>
