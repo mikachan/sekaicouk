@@ -245,7 +245,7 @@ const OsPage = () => (
 				>
 					needs testing
 				</OutboundLink>{' '}
-				(WordPress block editor)
+				(WordPress block editor: JavaScript, PHP, React, CSS)
 			</li>
 			<li>
 				<OutboundLink
@@ -254,7 +254,7 @@ const OsPage = () => (
 				>
 					Create Block Theme
 				</OutboundLink>{' '}
-				(WordPress plugin)
+				(WordPress plugin: JavaScript, PHP, React, CSS)
 			</li>
 			<li>
 				<OutboundLink
@@ -263,7 +263,7 @@ const OsPage = () => (
 				>
 					WordPress Playground
 				</OutboundLink>{' '}
-				(WordPress WASM)
+				(WordPress WASM: JavaScript, CSS, TypeScript)
 			</li>
 		</ul>
 		<a href="/">← back to sekai.co.uk</a>
