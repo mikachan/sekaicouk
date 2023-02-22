@@ -171,6 +171,14 @@ const OsPage = () => (
 					GitHub Tips & Tricks
 				</OutboundLink>
 			</li>
+			<li>
+				<OutboundLink
+					href="https://www.dreamsongs.com/IHE/IHE-31.html"
+					target="_blank"
+				>
+					The Secret of Why Open Source Works
+				</OutboundLink>
+			</li>
 		</ul>
 		<h3>Projects I Recommend</h3>
 		<ul>
