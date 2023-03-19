@@ -113,7 +113,7 @@ const OsPage = () => (
 				</OutboundLink>
 			</li>
 		</ul>
-		<h3>Recommended reading</h3>
+		<h3>Recommended reading/learning</h3>
 		<ul>
 			<li>
 				<OutboundLink href="https://opensource.com/" target="_blank">
@@ -154,6 +154,22 @@ const OsPage = () => (
 				>
 					TED Talks on Open Source
 				</OutboundLink>
+			</li>
+			<li>
+				<OutboundLink
+					href="https://www.youtube.com/watch?v=sK3YH3-5nDo&ab_channel=TEDxTalks"
+					target="_blank"
+				>
+					Video: Steve Fisher - What Can We Learn From Open Source
+				</OutboundLink>
+			</li>
+			<li>
+				<OutboundLink
+					href="https://training.linuxfoundation.org/training/fundamentals-of-professional-open-source-management-lfc110/"
+					target="_blank"
+				>
+					Course: Fundamentals of Professional Open Source Management
+				</OutboundLink>: a free course from the Linux Foundation
 			</li>
 			<li>
 				<OutboundLink
