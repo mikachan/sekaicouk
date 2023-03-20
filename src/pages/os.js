@@ -169,7 +169,8 @@ const OsPage = () => (
 					target="_blank"
 				>
 					Course: Fundamentals of Professional Open Source Management
-				</OutboundLink>: a free course from the Linux Foundation
+				</OutboundLink>
+				: a free course from the Linux Foundation
 			</li>
 			<li>
 				<OutboundLink
@@ -241,6 +242,22 @@ const OsPage = () => (
 					target="_blank"
 				>
 					Playwright
+				</OutboundLink>
+			</li>
+			<li>
+				<OutboundLink
+					href="https://github.com/WordPress/"
+					target="_blank"
+				>
+					WordPress
+				</OutboundLink>
+			</li>
+			<li>
+				<OutboundLink
+					href="https://git.drupalcode.org/project/drupal"
+					target="_blank"
+				>
+					Drupal
 				</OutboundLink>
 			</li>
 		</ul>
