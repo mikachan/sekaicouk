@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = (props) => (
 	<footer id="footer" style={props.timeout ? { display: 'none' } : {}}>
-		<p className="copyright">&copy; 2003-2023.</p>
+		<p className="copyright">&copy; 2003-2024.</p>
 	</footer>
 );
 
