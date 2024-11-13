@@ -57,12 +57,12 @@ const Header = (props) => (
 						</li>
 						<li>
 							<OutboundLink
-								href="https://www.twitter.com/mikachan_"
+								href="https://bsky.app/profile/mikachan88.bsky.social"
 								target="_blank"
 								rel="noreferrer"
-								className="icon fa-twitter"
+								className="icon fa-cloud"
 							>
-								<span className="label">Twitter</span>
+								<span className="label">Bluesky</span>
 							</OutboundLink>
 						</li>
 					</ul>
