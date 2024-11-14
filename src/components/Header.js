@@ -120,6 +120,11 @@ const Header = (props) => (
 						<a href="/os">Embracing Open Source</a>
 					</button>
 				</li>
+				<li>
+					<button>
+						<a href="/gutenberg">Help Shape Gutenberg</a>
+					</button>
+				</li>
 			</ul>
 		</nav>
 	</header>
