@@ -17,7 +17,7 @@ const OsPage = () => (
 					href="https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/"
 					target="_blank"
 				>
-					Beginnger's Guide on Contributing to Open Sourse
+					Beginnger's Guide on Contributing to Open Source
 				</OutboundLink>
 				: FreeCodeCamp
 			</li>
