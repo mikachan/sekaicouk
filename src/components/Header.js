@@ -57,7 +57,7 @@ const Header = (props) => (
 						</li>
 						<li>
 							<OutboundLink
-								href="https://bsky.app/profile/mikachan88.bsky.social"
+								href="https://bsky.app/profile/sekai.co.uk"
 								target="_blank"
 								rel="noreferrer"
 								className="icon fa-cloud"
