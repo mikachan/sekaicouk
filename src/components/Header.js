@@ -1,6 +1,13 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faGithub,
+	faWordpress,
+	faLinkedin,
+	faBluesky,
+} from '@fortawesome/free-brands-svg-icons';
 
 const trackSectionView = (sectionName) => {
 	if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined')
@@ -30,9 +37,8 @@ const Header = (props) => (
 								href="https://github.com/mikachan"
 								target="_blank"
 								rel="noreferrer"
-								className="icon fa-github"
 							>
-								<span className="label">GitHub</span>
+								<FontAwesomeIcon icon={faGithub} />
 							</OutboundLink>
 						</li>
 						<li>
@@ -40,19 +46,8 @@ const Header = (props) => (
 								href="https://profiles.wordpress.org/mikachan/"
 								target="_blank"
 								rel="noreferrer"
-								className="icon fa-wordpress"
 							>
-								<span className="label">WordPress</span>
-							</OutboundLink>
-						</li>
-						<li>
-							<OutboundLink
-								href="https://www.linkedin.com/in/sarahnorris88"
-								target="_blank"
-								rel="noreferrer"
-								className="icon fa-linkedin"
-							>
-								<span className="label">LinkedIn</span>
+								<FontAwesomeIcon icon={faWordpress} />
 							</OutboundLink>
 						</li>
 						<li>
@@ -60,9 +55,17 @@ const Header = (props) => (
 								href="https://bsky.app/profile/sekai.co.uk"
 								target="_blank"
 								rel="noreferrer"
-								className="icon fa-cloud"
 							>
-								<span className="label">Bluesky</span>
+								<FontAwesomeIcon icon={faBluesky} />
+							</OutboundLink>
+						</li>
+						<li>
+							<OutboundLink
+								href="https://www.linkedin.com/in/sarahnorris88"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon icon={faLinkedin} />
 							</OutboundLink>
 						</li>
 					</ul>
