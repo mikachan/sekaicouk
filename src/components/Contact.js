@@ -1,5 +1,17 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faGithub,
+	faWordpress,
+	faLinkedin,
+	faBluesky,
+	faTwitter,
+	faUnsplash,
+	faLastfm,
+	faInstagram,
+	faTumblr,
+} from '@fortawesome/free-brands-svg-icons';
 
 function Contact(props) {
 	return (
@@ -17,9 +29,8 @@ function Contact(props) {
 						href="https://github.com/mikachan"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-github"
 					>
-						<span className="label">GitHub</span>
+						<FontAwesomeIcon icon={faGithub} />
 					</OutboundLink>
 				</li>
 				<li>
@@ -27,9 +38,8 @@ function Contact(props) {
 						href="https://profiles.wordpress.org/mikachan/"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-wordpress"
 					>
-						<span className="label">WordPress</span>
+						<FontAwesomeIcon icon={faWordpress} />
 					</OutboundLink>
 				</li>
 				<li>
@@ -37,9 +47,8 @@ function Contact(props) {
 						href="https://www.linkedin.com/in/sarahnorris88"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-linkedin"
 					>
-						<span className="label">LinkedIn</span>
+						<FontAwesomeIcon icon={faLinkedin} />
 					</OutboundLink>
 				</li>
 				<li>
@@ -47,9 +56,8 @@ function Contact(props) {
 						href="https://bsky.app/profile/sekai.co.uk"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-cloud"
 					>
-						<span className="label">Bluesky</span>
+						<FontAwesomeIcon icon={faBluesky} />
 					</OutboundLink>
 				</li>
 				<li>
@@ -57,9 +65,8 @@ function Contact(props) {
 						href="https://www.twitter.com/mikachan_"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-twitter"
 					>
-						<span className="label">Twitter</span>
+						<FontAwesomeIcon icon={faTwitter} />
 					</OutboundLink>
 				</li>
 				<li>
@@ -67,9 +74,8 @@ function Contact(props) {
 						href="https://unsplash.com/@mikachan_"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-camera"
 					>
-						<span className="label">Unsplash</span>
+						<FontAwesomeIcon icon={faUnsplash} />
 					</OutboundLink>
 				</li>
 				<li>
@@ -77,9 +83,8 @@ function Contact(props) {
 						href="https://last.fm/user/mikachan_"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-lastfm"
 					>
-						<span className="label">Last.fm</span>
+						<FontAwesomeIcon icon={faLastfm} />
 					</OutboundLink>
 				</li>
 				<li>
@@ -87,9 +92,8 @@ function Contact(props) {
 						href="https://www.instagram.com/mikachan_/"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-instagram"
 					>
-						<span className="label">Instagram</span>
+						<FontAwesomeIcon icon={faInstagram} />
 					</OutboundLink>
 				</li>
 				<li>
@@ -97,9 +101,8 @@ function Contact(props) {
 						href="https://www.tumblr.com/blog/mikachan88-blog"
 						target="_blank"
 						rel="noreferrer"
-						className="icon fa-tumblr"
 					>
-						<span className="label">Tumblr</span>
+						<FontAwesomeIcon icon={faTumblr} />
 					</OutboundLink>
 				</li>
 			</ul>
