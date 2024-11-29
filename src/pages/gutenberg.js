@@ -10,26 +10,10 @@ const OsPage = () => (
 			you get started with Gutenberg, the WordPress Editor.
 			<br />I also have a broader page on{' '}
 			<a href="/os">getting started with open source</a>.
-			<br />
-			I'm{' '}
-			<OutboundLink href="https://github.com/mikachan" target="_blank">
-				@mikachan
-			</OutboundLink>{' '}
-			on GitHub. I'm happy to be pinged to answer questions or review a
-			PR.
 		</p>
 
 		<h3>Helpful links for getting started</h3>
 		<ul>
-			<li>
-				<OutboundLink
-					href="https://wordpress.org/gutenberg/"
-					target="_blank"
-				>
-					wordpress.org/gutenberg
-				</OutboundLink>
-				: Try out Gutenberg in the browser
-			</li>
 			<li>
 				<OutboundLink
 					href="https://developer.wordpress.org/block-editor/"
@@ -70,6 +54,15 @@ const OsPage = () => (
 				>
 					Guide for Keeping up with the WordPress project
 				</OutboundLink>
+			</li>
+			<li>
+				<OutboundLink
+					href="https://wordpress.org/gutenberg/"
+					target="_blank"
+				>
+					wordpress.org/gutenberg
+				</OutboundLink>
+				: Try out Gutenberg in the browser
 			</li>
 		</ul>
 		<h3>Finding What to Work On</h3>
