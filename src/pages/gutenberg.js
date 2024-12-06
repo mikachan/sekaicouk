@@ -81,9 +81,18 @@ const OsPage = () => (
 					href="https://github.com/orgs/WordPress/projects/210"
 					target="_blank"
 				>
-					GitHub Board: WordPress 6.8 Issues
+					GitHub Board: WordPress 6.7 Issues
 				</OutboundLink>
-				: Issues for WordPress 6.8
+				: Issues for WordPress 6.7
+			</li>
+			<li>
+				<OutboundLink
+					href="https://github.com/orgs/WordPress/projects/232"
+					target="_blank"
+				>
+					GitHub Board: WordPress 6.7.x Issues
+				</OutboundLink>
+				: Issues for WordPress 6.7.x
 			</li>
 			<li>
 				<OutboundLink
