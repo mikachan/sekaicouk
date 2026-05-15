@@ -1,4 +1,5 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -96,38 +97,32 @@ const Header = (props) => (
 					</button>
 				</li>
 				<li>
-					<button>
-						<OutboundLink
-							href="https://blog.sekai.co.uk/"
-							target="_blank"
-						>
-							Blog
-						</OutboundLink>
-					</button>
+					<OutboundLink
+						href="https://blog.sekai.co.uk/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Blog
+					</OutboundLink>
 				</li>
 				<li>
-					<button>
-						<OutboundLink
-							href="https://you.sekai.co.uk/"
-							target="_blank"
-						>
-							Forget-me-not
-						</OutboundLink>
-					</button>
+					<OutboundLink
+						href="https://you.sekai.co.uk/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Forget-me-not
+					</OutboundLink>
 				</li>
 			</ul>
 		</nav>
 		<nav>
 			<ul>
 				<li>
-					<button>
-						<a href="/os">Embracing Open Source</a>
-					</button>
+					<Link to="/os">Embracing Open Source</Link>
 				</li>
 				<li>
-					<button>
-						<a href="/gutenberg">Help Shape Gutenberg</a>
-					</button>
+					<Link to="/gutenberg">Help Shape Gutenberg</Link>
 				</li>
 			</ul>
 		</nav>

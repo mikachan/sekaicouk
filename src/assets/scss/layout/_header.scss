@@ -128,7 +128,8 @@
           border-left: 0;
         }
 
-        button {
+        button,
+        a {
           display: block;
           margin: 0 auto;
           min-width: 7.5rem;
@@ -140,7 +141,10 @@
           font-size: 0.8rem;
           font-family: font(family);
           border: none;
+          border-bottom: none;
           box-shadow: none;
+          color: palette(fg-bold) !important;
+          text-decoration: none;
 
           &:hover,
           &:focus {
@@ -265,6 +269,7 @@
             border-top: 0;
           }
 
+          button,
           a {
             height: 3rem;
             line-height: 3rem;
