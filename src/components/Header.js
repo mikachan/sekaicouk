@@ -78,7 +78,7 @@ const Header = (props) => (
 				</div>
 			</div>
 		</div>
-		<nav>
+		<nav aria-label="Site">
 			<ul>
 				<li>
 					<button
@@ -122,7 +122,7 @@ const Header = (props) => (
 				</li>
 			</ul>
 		</nav>
-		<nav>
+		<nav aria-label="Resources">
 			<ul>
 				<li>
 					<Link to="/os">Embracing Open Source</Link>
