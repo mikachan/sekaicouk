@@ -1,6 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		title: 'sekai.co.uk',
+		siteUrl: 'https://sekai.co.uk',
 		author: 'Sarah Norris',
 		description: 'Personal site',
 	},
