@@ -112,6 +112,13 @@ const Header = (props) => (
 					</OutboundLink>
 				</li>
 				<li>
+					<Link to="/talks">Talks</Link>
+				</li>
+			</ul>
+		</nav>
+		<nav aria-label="Resources">
+			<ul>
+				<li>
 					<OutboundLink
 						href="https://you.sekai.co.uk/"
 						target="_blank"
@@ -119,16 +126,6 @@ const Header = (props) => (
 					>
 						Forget-me-not
 					</OutboundLink>
-				</li>
-			</ul>
-		</nav>
-		<nav aria-label="Resources">
-			<ul>
-				<li>
-					<Link to="/os">Embracing Open Source</Link>
-				</li>
-				<li>
-					<Link to="/gutenberg">Help Shape Gutenberg</Link>
 				</li>
 			</ul>
 		</nav>

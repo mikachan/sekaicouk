@@ -359,7 +359,7 @@ const OsPage = () => (
 				(WordPress WASM: JavaScript, CSS, TypeScript)
 			</li>
 		</ul>
-		<Link to="/">← back to sekai.co.uk</Link>
+		<Link to="/talks">← back to Talks</Link>
 	</Layout>
 );
 
