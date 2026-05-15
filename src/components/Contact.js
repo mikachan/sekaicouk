@@ -1,4 +1,5 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -119,5 +120,11 @@ function Contact(props) {
 		</article>
 	);
 }
+
+Contact.propTypes = {
+	article: PropTypes.string.isRequired,
+	articleTimeout: PropTypes.bool.isRequired,
+	close: PropTypes.node.isRequired,
+};
 
 export default Contact;

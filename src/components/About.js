@@ -1,4 +1,5 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
+import PropTypes from 'prop-types';
 import React from 'react';
 import thora from '../images/thora.jpg';
 
@@ -85,5 +86,11 @@ function About(props) {
 		</article>
 	);
 }
+
+About.propTypes = {
+	article: PropTypes.string.isRequired,
+	articleTimeout: PropTypes.bool.isRequired,
+	close: PropTypes.node.isRequired,
+};
 
 export default About;

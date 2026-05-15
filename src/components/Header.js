@@ -136,8 +136,8 @@ const Header = (props) => (
 );
 
 Header.propTypes = {
-	onOpenArticle: PropTypes.func,
-	timeout: PropTypes.bool,
+	onOpenArticle: PropTypes.func.isRequired,
+	timeout: PropTypes.bool.isRequired,
 };
 
 export default Header;

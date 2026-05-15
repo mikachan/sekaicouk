@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const SiteHead = ({
@@ -17,6 +18,12 @@ const SiteHead = ({
 			<meta name="keywords" content={keywords} />
 		</>
 	);
+};
+
+SiteHead.propTypes = {
+	title: PropTypes.string,
+	description: PropTypes.string,
+	keywords: PropTypes.string,
 };
 
 export default SiteHead;

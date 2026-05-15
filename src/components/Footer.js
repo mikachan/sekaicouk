@@ -8,7 +8,7 @@ const Footer = (props) => (
 );
 
 Footer.propTypes = {
-	timeout: PropTypes.bool,
+	timeout: PropTypes.bool.isRequired,
 };
 
 export default Footer;

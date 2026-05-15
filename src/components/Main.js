@@ -28,11 +28,10 @@ function Main(props) {
 }
 
 Main.propTypes = {
-	route: PropTypes.object,
-	article: PropTypes.string,
-	articleTimeout: PropTypes.bool,
-	onCloseArticle: PropTypes.func,
-	timeout: PropTypes.bool,
+	article: PropTypes.string.isRequired,
+	articleTimeout: PropTypes.bool.isRequired,
+	onCloseArticle: PropTypes.func.isRequired,
+	timeout: PropTypes.bool.isRequired,
 	setWrapperRef: PropTypes.func.isRequired,
 };
 

@@ -16,13 +16,14 @@ const Layout = ({ children, location }) => {
 		);
 	}
 
-	return (
-		<>{content}</>
-	);
+	return <>{content}</>;
 };
 
 Layout.propTypes = {
 	children: PropTypes.node.isRequired,
+	location: PropTypes.shape({
+		pathname: PropTypes.string,
+	}),
 };
 
 export default Layout;
