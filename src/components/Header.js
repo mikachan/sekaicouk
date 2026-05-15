@@ -8,6 +8,7 @@ import {
 	faLinkedin,
 	faBluesky,
 } from '@fortawesome/free-brands-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const trackSectionView = (sectionName) => {
 	if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined')
@@ -20,7 +21,7 @@ const trackSectionView = (sectionName) => {
 const Header = (props) => (
 	<header id="header" style={props.timeout ? { display: 'none' } : {}}>
 		<div className="logo">
-			<span className="icon fa-heart"></span>
+			<FontAwesomeIcon icon={faHeart} className="icon" />
 		</div>
 		<div className="content">
 			<div className="inner">
