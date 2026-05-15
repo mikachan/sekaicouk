@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SiteHead from '../components/SiteHead';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
@@ -10,7 +11,7 @@ const OsPage = () => (
 			Thank you for attending my talk! Here is a list of resources to help
 			you get started with Gutenberg, the WordPress Editor.
 			<br />I also have a broader page on{' '}
-			<a href="/os">getting started with open source</a>.
+			<Link to="/os">getting started with open source</Link>.
 		</p>
 
 		<h3>Helpful links for getting started</h3>
@@ -174,7 +175,7 @@ const OsPage = () => (
 				: Recommended Mac terminal emulator
 			</li>
 		</ul>
-		<a href="/">← back to sekai.co.uk</a>
+		<Link to="/">← back to sekai.co.uk</Link>
 	</Layout>
 );
 

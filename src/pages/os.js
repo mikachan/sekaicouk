@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import SiteHead from '../components/SiteHead';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
@@ -308,7 +309,7 @@ const OsPage = () => (
 				(WordPress WASM: JavaScript, CSS, TypeScript)
 			</li>
 		</ul>
-		<a href="/">← back to sekai.co.uk</a>
+		<Link to="/">← back to sekai.co.uk</Link>
 	</Layout>
 );
 
