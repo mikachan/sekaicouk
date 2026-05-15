@@ -7,6 +7,7 @@ function Main(props) {
 	let close = (
 		<button
 			className="close"
+			type="button"
 			onClick={() => {
 				props.onCloseArticle();
 			}}

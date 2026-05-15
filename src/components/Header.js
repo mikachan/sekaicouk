@@ -78,6 +78,7 @@ const Header = (props) => (
 			<ul>
 				<li>
 					<button
+						type="button"
 						onClick={() => {
 							props.onOpenArticle('about');
 							trackSectionView('About');
@@ -88,6 +89,7 @@ const Header = (props) => (
 				</li>
 				<li>
 					<button
+						type="button"
 						onClick={() => {
 							props.onOpenArticle('contact');
 							trackSectionView('Contact');
