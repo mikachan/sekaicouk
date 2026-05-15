@@ -205,4 +205,9 @@ const OsPage = () => (
 
 export default OsPage;
 
-export const Head = () => <SiteHead />;
+export const Head = () => (
+	<SiteHead
+		title="Help Shape Gutenberg"
+		description="Resources for getting started with Gutenberg contribution."
+	/>
+);

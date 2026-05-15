@@ -365,4 +365,9 @@ const OsPage = () => (
 
 export default OsPage;
 
-export const Head = () => <SiteHead />;
+export const Head = () => (
+	<SiteHead
+		title="Embracing Open Source"
+		description="Resources for getting started with open source contribution."
+	/>
+);
