@@ -1,7 +1,5 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/skel';
+@use 'sass:meta';
+@use 'libs/toolkit' as *;
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600');
 
 /*
@@ -26,23 +24,23 @@
 
 // Base.
 
-	@import 'base/page';
-	@import 'base/typography';
+	@include meta.load-css('base/page');
+	@include meta.load-css('base/typography');
 
 // Component.
 
-	@import 'components/form';
-	@import 'components/box';
-	@import 'components/icon';
-	@import 'components/image';
-	@import 'components/list';
-	@import 'components/table';
-	@import 'components/button';
+	@include meta.load-css('components/form');
+	@include meta.load-css('components/box');
+	@include meta.load-css('components/icon');
+	@include meta.load-css('components/image');
+	@include meta.load-css('components/list');
+	@include meta.load-css('components/table');
+	@include meta.load-css('components/button');
 
 // Layout.
 
-	@import 'layout/bg';
-	@import 'layout/wrapper';
-	@import 'layout/header';
-	@import 'layout/main';
-	@import 'layout/footer';
+	@include meta.load-css('layout/bg');
+	@include meta.load-css('layout/wrapper');
+	@include meta.load-css('layout/header');
+	@include meta.load-css('layout/main');
+	@include meta.load-css('layout/footer');

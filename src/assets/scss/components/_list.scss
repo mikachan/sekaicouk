@@ -1,3 +1,5 @@
+@use '../libs/toolkit' as *;
+
 ///
 /// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
@@ -8,7 +10,7 @@
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 size(element-margin) 0;
 		padding-left: 1.25em;
 
 		li {
@@ -18,7 +20,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 size(element-margin) 0;
 		padding-left: 1em;
 
 		li {
@@ -30,7 +32,7 @@
 			padding-left: 0;
 
 			li {
-				border-top: solid _size(border-width) _palette(border);
+				border-top: solid size(border-width) palette(border);
 				padding: 0.5em 0;
 
 				&:first-child {
@@ -55,7 +57,7 @@
 
 				a {
 					border-radius: 100%;
-					box-shadow: inset 0 0 0 _size(border-width) _palette(border);
+					box-shadow: inset 0 0 0 size(border-width) palette(border);
 					display: inline-block;
 					height: 2.25rem;
 					line-height: 2.25rem;
@@ -63,11 +65,11 @@
 					width: 2.25rem;
 
 					&:hover {
-						background-color: _palette(border-bg);
+						background-color: palette(border-bg);
 					}
 
 					&:active {
-						background-color: _palette(border-bg-alt);
+						background-color: palette(border-bg-alt);
 					}
 				}
 			}
@@ -80,7 +82,7 @@
 
 			li {
 				display: inline-block;
-				padding: 0 (_size(element-margin) * 0.5) 0 0;
+				padding: 0 (size(element-margin) * 0.5) 0 0;
 				vertical-align: middle;
 
 				&:last-child {
@@ -90,14 +92,14 @@
 
 			&.small {
 				li {
-					padding: 0 (_size(element-margin) * 0.25) 0 0;
+					padding: 0 (size(element-margin) * 0.25) 0 0;
 				}
 			}
 
 			&.vertical {
 				li {
 					display: block;
-					padding: (_size(element-margin) * 0.5) 0 0 0;
+					padding: (size(element-margin) * 0.5) 0 0 0;
 
 					&:first-child {
 						padding-top: 0;
@@ -110,7 +112,7 @@
 
 				&.small {
 					li {
-						padding: (_size(element-margin) * 0.25) 0 0 0;
+						padding: (size(element-margin) * 0.25) 0 0 0;
 
 						&:first-child {
 							padding-top: 0;
@@ -121,14 +123,14 @@
 
 			&.fit {
 				display: table;
-				margin-left: (_size(element-margin) * -0.5);
+				margin-left: (size(element-margin) * -0.5);
 				padding: 0;
 				table-layout: fixed;
-				width: calc(100% + #{(_size(element-margin) * 0.5)});
+				width: calc(100% + #{(size(element-margin) * 0.5)});
 
 				li {
 					display: table-cell;
-					padding: 0 0 0 (_size(element-margin) * 0.5);
+					padding: 0 0 0 (size(element-margin) * 0.5);
 
 					> * {
 						margin-bottom: 0;
@@ -136,20 +138,20 @@
 				}
 
 				&.small {
-					margin-left: (_size(element-margin) * -0.25);
-					width: calc(100% + #{(_size(element-margin) * 0.25)});
+					margin-left: (size(element-margin) * -0.25);
+					width: calc(100% + #{(size(element-margin) * 0.25)});
 
 					li {
-						padding: 0 0 0 (_size(element-margin) * 0.25);
+						padding: 0 0 0 (size(element-margin) * 0.25);
 					}
 				}
 			}
 
 			@include breakpoint(xsmall) {
-				margin: 0 0 _size(element-margin) 0;
+				margin: 0 0 size(element-margin) 0;
 
 				li {
-					padding: (_size(element-margin) * 0.5) 0 0 0;
+					padding: (size(element-margin) * 0.5) 0 0 0;
 					display: block;
 					text-align: center;
 					width: 100%;
@@ -172,7 +174,7 @@
 
 				&.small {
 					li {
-						padding: (_size(element-margin) * 0.25) 0 0 0;
+						padding: (size(element-margin) * 0.25) 0 0 0;
 
 						&:first-child {
 							padding-top: 0;
@@ -184,15 +186,15 @@
 	}
 
 	dl {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 size(element-margin) 0;
 
 		dt {
 			display: block;
-			font-weight: _font(weight-bold);
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			font-weight: font(weight-bold);
+			margin: 0 0 (size(element-margin) * 0.5) 0;
 		}
 
 		dd {
-			margin-left: _size(element-margin);
+			margin-left: size(element-margin);
 		}
 	}

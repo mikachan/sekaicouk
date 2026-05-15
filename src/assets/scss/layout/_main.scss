@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use '../libs/toolkit' as *;
+
 ///
 /// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
@@ -21,15 +24,15 @@
 		article {
 			@include vendor('transform', 'translateY(0.25rem)');
 			@include vendor('transition', (
-				'opacity #{_duration(article)} ease-in-out',
-				'transform #{_duration(article)} ease-in-out'
+				'opacity #{duration(article)} ease-in-out',
+				'transform #{duration(article)} ease-in-out'
 			));
 			@include padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: transparentize(_palette(bg), 0.15);
-			border-radius: _size(border-radius);
+			background-color: color.adjust(palette(bg), $alpha: -0.15);
+			border-radius: size(border-radius);
 			opacity: 0;
 
 			&.timeout {
@@ -59,7 +62,7 @@
 				box-shadow: 0 0;
 
 				&:before {
-					@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+					@include vendor('transition', 'background-color #{duration(transition)} ease-in-out');
 					content: '';
 					display: block;
 					position: absolute;
@@ -69,7 +72,7 @@
 					height: 2.5rem;
 					border-radius: 100%;
 					background-position: center;
-					background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" zoomAndPan="disable"><style>line { stroke: #{_palette(border)}; stroke-width: 1; }</style><line x1="2" y1="2" x2="18" y2="18" /><line x1="18" y1="2" x2="2" y2="18" /></svg>');
+					background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" zoomAndPan="disable"><style>line { stroke: #{palette(border)}; stroke-width: 1; }</style><line x1="2" y1="2" x2="18" y2="18" /><line x1="18" y1="2" x2="2" y2="18" /></svg>');
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
 				}
@@ -78,13 +81,13 @@
 					background-color: transparent;
 					
 					&:before {
-						background-color: _palette(border-bg);
+						background-color: palette(border-bg);
 					}
 				}
 
 				&:active {
 					&:before {
-						background-color: _palette(border-bg-alt);
+						background-color: palette(border-bg-alt);
 					}
 				}
 			}

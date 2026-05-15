@@ -1,7 +1,4 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/skel';
+@use 'libs/toolkit' as *;
 
 /*
 	Dimension by HTML5 UP
@@ -14,6 +11,6 @@
 	#main {
 		article {
 			opacity: 1;
-			margin: (_size(element-margin) * 2) 0 0 0;
+			margin: (size(element-margin) * 2) 0 0 0;
 		}
 	}

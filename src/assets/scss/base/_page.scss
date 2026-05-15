@@ -1,3 +1,5 @@
+@use '../libs/toolkit' as *;
+
 ///
 /// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
@@ -19,7 +21,7 @@
 		}
 
 	body {
-		background: _palette(bg);
+		background: palette(bg);
 
 		// Prevents animation/transition "flicker" on page load.
 		// Automatically added/removed by js/main.js.

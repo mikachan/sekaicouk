@@ -1,3 +1,5 @@
+@use '../libs/toolkit' as *;
+
 ///
 /// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
@@ -13,9 +15,9 @@
   @include vendor(
     'transition',
     (
-      'transform #{_duration(article)} ease-in-out',
-      'filter #{_duration(article)} ease-in-out',
-      'opacity #{_duration(article)} ease-in-out'
+      'transform #{duration(article)} ease-in-out',
+      'filter #{duration(article)} ease-in-out',
+      'opacity #{duration(article)} ease-in-out'
     )
   );
   background-image: -moz-radial-gradient(
@@ -38,7 +40,7 @@
   text-align: center;
 
   > * {
-    @include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
+    @include vendor('transition', 'opacity #{duration(article)} ease-in-out');
     position: relative;
     margin-top: 3.5rem;
 
@@ -47,10 +49,10 @@
       display: block;
       position: absolute;
       top: calc(-3.5rem - 1px);
-      left: calc(50% - #{_size(border-width) * 1});
-      width: _size(border-width);
+      left: calc(50% - #{size(border-width) * 1});
+      width: size(border-width);
       height: calc(3.5rem + 1px);
-      background: _palette(border);
+      background: palette(border);
     }
   }
 
@@ -66,7 +68,7 @@
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
-    border: solid _size(border-width) _palette(border);
+    border: solid size(border-width) palette(border);
     border-radius: 100%;
 
     .icon {
@@ -77,18 +79,18 @@
 
   .content {
     border-style: solid;
-    border-color: _palette(border);
-    border-top-width: _size(border-width);
-    border-bottom-width: _size(border-width);
+    border-color: palette(border);
+    border-top-width: size(border-width);
+    border-bottom-width: size(border-width);
     max-width: 100%;
 
     .inner {
       @include vendor(
         'transition',
         (
-          'max-height #{_duration(intro)} ease',
-          'padding #{_duration(intro)} ease',
-          'opacity #{_duration(article)} ease-in-out'
+          'max-height #{duration(intro)} ease',
+          'padding #{duration(intro)} ease',
+          'opacity #{duration(article)} ease-in-out'
         )
       );
       @include vendor('transition-delay', '0.25s');
@@ -103,7 +105,7 @@
 
     p {
       text-transform: uppercase;
-      letter-spacing: _font(letter-spacing);
+      letter-spacing: font(letter-spacing);
       font-size: 0.8rem;
       line-height: 2;
     }
@@ -115,12 +117,12 @@
       margin-bottom: 0;
       list-style: none;
       padding-left: 0;
-      border: solid _size(border-width) _palette(border);
-      border-radius: _size(border-radius);
+      border: solid size(border-width) palette(border);
+      border-radius: size(border-radius);
 
       li {
         padding-left: 0;
-        border-left: solid _size(border-width) _palette(border);
+        border-left: solid size(border-width) palette(border);
 
         &:first-child {
           border-left: 0;
@@ -132,21 +134,21 @@
           min-width: 7.5rem;
           height: 2.75rem;
           line-height: 2.75rem;
-          padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+          padding: 0 1.25rem 0 (1.25rem + font(letter-spacing));
           text-transform: uppercase;
-          letter-spacing: _font(letter-spacing);
+          letter-spacing: font(letter-spacing);
           font-size: 0.8rem;
-          font-family: _font(family);
+          font-family: font(family);
           border: none;
           box-shadow: none;
 
           &:hover,
           &:focus {
-            background-color: _palette(border-bg);
+            background-color: palette(border-bg);
           }
 
           &:active {
-            background-color: _palette(border-bg-alt);
+            background-color: palette(border-bg-alt);
           }
         }
       }
@@ -158,10 +160,10 @@
         display: block;
         position: absolute;
         top: 0;
-        left: calc(50% - #{_size(border-width) * 1});
-        width: _size(border-width);
+        left: calc(50% - #{size(border-width) * 1});
+        width: size(border-width);
         height: 100%;
-        background: _palette(border);
+        background: palette(border);
       }
 
       ul {
@@ -257,7 +259,7 @@
 
         li {
           border-left: 0;
-          border-top: solid _size(border-width) _palette(border);
+          border-top: solid size(border-width) palette(border);
 
           &:first-child {
             border-top: 0;

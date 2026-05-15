@@ -1,3 +1,5 @@
+@use '../libs/toolkit' as *;
+
 ///
 /// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
@@ -12,17 +14,17 @@
 	}
 
 	table {
-		margin: 0 0 _size(element-margin) 0;
+		margin: 0 0 size(element-margin) 0;
 		width: 100%;
 
 		tbody {
 			tr {
-				border: solid _size(border-width) _palette(border);
+				border: solid size(border-width) palette(border);
 				border-left: 0;
 				border-right: 0;
 
 				&:nth-child(2n + 1) {
-					background-color: _palette(border-bg);
+					background-color: palette(border-bg);
 				}
 			}
 		}
@@ -32,19 +34,19 @@
 		}
 
 		th {
-			color: _palette(fg-bold);
+			color: palette(fg-bold);
 			font-size: 0.9em;
-			font-weight: _font(weight-bold);
+			font-weight: font(weight-bold);
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
 
 		thead {
-			border-bottom: solid (_size(border-width) * 2) _palette(border);
+			border-bottom: solid (size(border-width) * 2) palette(border);
 		}
 
 		tfoot {
-			border-top: solid (_size(border-width) * 2) _palette(border);
+			border-top: solid (size(border-width) * 2) palette(border);
 		}
 
 		&.alt {
@@ -53,18 +55,18 @@
 			tbody {
 				tr {
 					td {
-						border: solid _size(border-width) _palette(border);
+						border: solid size(border-width) palette(border);
 						border-left-width: 0;
 						border-top-width: 0;
 
 						&:first-child {
-							border-left-width: _size(border-width);
+							border-left-width: size(border-width);
 						}
 					}
 
 					&:first-child {
 						td {
-							border-top-width: _size(border-width);
+							border-top-width: size(border-width);
 						}
 					}
 				}

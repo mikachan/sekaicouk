@@ -1,3 +1,5 @@
+@use '../libs/toolkit' as *;
+
 ///
 /// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
@@ -7,9 +9,9 @@
 /* Form */
 
 	form {
-		$gutter: _size(element-margin) * 0.75;
+		$gutter: size(element-margin) * 0.75;
 
-		margin: 0 0 (_size(element-margin) * 1.25) 0;
+		margin: 0 0 (size(element-margin) * 1.25) 0;
 
 		.field {
 			margin: 0 0 ($gutter * 1) 0;
@@ -63,13 +65,13 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
+		color: palette(fg-bold);
 		display: block;
 		font-size: 0.8rem;
-		font-weight: _font(weight);
-		letter-spacing: _font(letter-spacing);
+		font-weight: font(weight);
+		letter-spacing: font(letter-spacing);
 		line-height: 1.5;
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		margin: 0 0 (size(element-margin) * 0.5) 0;
 		text-transform: uppercase;
 	}
 
@@ -81,13 +83,13 @@
 	textarea {
 		@include vendor('appearance', 'none');
 		@include vendor('transition', (
-			'border-color #{_duration(transition)} ease-in-out',
-			'box-shadow #{_duration(transition)} ease-in-out',
-			'background-color #{_duration(transition)} ease-in-out'
+			'border-color #{duration(transition)} ease-in-out',
+			'box-shadow #{duration(transition)} ease-in-out',
+			'background-color #{duration(transition)} ease-in-out'
 		));
 		background: transparent;
-		border-radius: _size(border-radius);
-		border: solid _size(border-width) _palette(border);
+		border-radius: size(border-radius);
+		border: solid size(border-width) palette(border);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -100,16 +102,16 @@
 		}
 
 		&:focus {
-			background: _palette(border-bg);
-			border-color: _palette(fg-bold);
-			box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+			background: palette(border-bg);
+			border-color: palette(fg-bold);
+			box-shadow: 0 0 0 size(border-width) palette(fg-bold);
 		}
 	}
 
 	select {
 		option {
-			background: _palette(bg);
-			color: _palette(fg);
+			background: palette(bg);
+			color: palette(fg);
 		}
 	}
 
@@ -119,18 +121,18 @@
 		position: relative;
 
 		&:before {
-			color: _palette(border);
+			color: palette(border);
 			content: '\f107';
 			display: block;
-			height: _size(element-height);
-			//line-height: _size(element-height);
-			line-height: calc(#{_size(element-height)} + 0em);
+			height: size(element-height);
+			//line-height: size(element-height);
+			line-height: calc(#{size(element-height)} + 0em);
 			pointer-events: none;
 			position: absolute;
 			right: 0;
 			text-align: center;
 			top: 0;
-			width: _size(element-height);
+			width: size(element-height);
 		}
 
 		select::-ms-expand {
@@ -142,7 +144,7 @@
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: _size(element-height);
+		height: size(element-height);
 	}
 
 	textarea {
@@ -162,51 +164,51 @@
 		& + label {
 			@include icon;
 			@include vendor('user-select', 'none');
-			color: _palette(fg);
+			color: palette(fg);
 			cursor: pointer;
 			display: inline-block;
 			font-size: 0.8rem;
-			font-weight: _font(weight);
-			margin: 0 0 (_size(element-margin) * 0.25) 0;
-			padding-left: (_size(element-height) * 0.6) + 1rem;
+			font-weight: font(weight);
+			margin: 0 0 (size(element-margin) * 0.25) 0;
+			padding-left: (size(element-height) * 0.6) + 1rem;
 			padding-right: 0.75rem;
 			position: relative;
 
 			&:before {
 				@include vendor('transition', (
-					'border-color #{_duration(transition)} ease-in-out',
-					'box-shadow #{_duration(transition)} ease-in-out',
-					'background-color #{_duration(transition)} ease-in-out'
+					'border-color #{duration(transition)} ease-in-out',
+					'box-shadow #{duration(transition)} ease-in-out',
+					'background-color #{duration(transition)} ease-in-out'
 				));
-				border-radius: _size(border-radius);
-				border: solid _size(border-width) _palette(border);
+				border-radius: size(border-radius);
+				border: solid size(border-width) palette(border);
 				content: '';
 				display: inline-block;
-				height: (_size(element-height) * 0.6);
+				height: (size(element-height) * 0.6);
 				left: 0;
-				//line-height: (_size(element-height) * 0.575);
-				line-height: calc(#{_size(element-height) * 0.575} + 0em);
+				//line-height: (size(element-height) * 0.575);
+				line-height: calc(#{size(element-height) * 0.575} + 0em);
 				position: absolute;
 				text-align: center;
 				top: -0.125rem;
-				width: (_size(element-height) * 0.6);
+				width: (size(element-height) * 0.6);
 			}
 		}
 
 		&:checked + label {
 			&:before {
-				background: _palette(fg-bold) !important;
-				border-color: _palette(fg-bold) !important;
-				color: _palette(bg);
+				background: palette(fg-bold) !important;
+				border-color: palette(fg-bold) !important;
+				color: palette(bg);
 				content: '\f00c';
 			}
 		}
 
 		&:focus + label {
 			&:before {
-				background: _palette(border-bg);
-				border-color: _palette(fg-bold);
-				box-shadow: 0 0 0 _size(border-width) _palette(fg-bold);
+				background: palette(border-bg);
+				border-color: palette(fg-bold);
+				box-shadow: 0 0 0 size(border-width) palette(fg-bold);
 			}
 		}
 	}
@@ -214,7 +216,7 @@
 	input[type="checkbox"] {
 		& + label {
 			&:before {
-				border-radius: _size(border-radius);
+				border-radius: size(border-radius);
 			}
 		}
 	}
@@ -228,26 +230,26 @@
 	}
 
 	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: _palette(fg-light) !important;
+		color: palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
+		color: palette(fg-light) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: _palette(fg-light) !important;
+		color: palette(fg-light) !important;
 		opacity: 1.0;
 	}

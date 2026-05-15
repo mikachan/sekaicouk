@@ -1,3 +1,5 @@
+@use '../libs/toolkit' as *;
+
 ///
 /// Dimension by HTML5 UP
 /// html5up.net | @ajlkn
@@ -10,9 +12,9 @@
   @include vendor(
     'transition',
     (
-      'transform #{_duration(article)} ease-in-out',
-      'filter #{_duration(article)} ease-in-out',
-      'opacity #{_duration(article)} ease-in-out'
+      'transform #{duration(article)} ease-in-out',
+      'filter #{duration(article)} ease-in-out',
+      'opacity #{duration(article)} ease-in-out'
     )
   );
   width: 100%;
@@ -21,7 +23,7 @@
   text-align: center;
 
   .copyright {
-    letter-spacing: _font(letter-spacing);
+    letter-spacing: font(letter-spacing);
     font-size: 0.6rem;
     opacity: 0.75;
     margin-bottom: 0;
