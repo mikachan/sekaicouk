@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout from '../components/layout';
 import Main from '../components/Main';
+import SiteHead from '../components/SiteHead';
 
 function IndexPage(props) {
 	const [isArticleVisible, setIsArticleVisible] = useState(false);
@@ -97,3 +98,5 @@ function IndexPage(props) {
 }
 
 export default IndexPage;
+
+export const Head = () => <SiteHead />;

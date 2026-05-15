@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import SiteHead from '../components/SiteHead';
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 
 const OsPage = () => (
@@ -178,3 +179,5 @@ const OsPage = () => (
 );
 
 export default OsPage;
+
+export const Head = () => <SiteHead />;

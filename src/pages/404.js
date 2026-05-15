@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
+import SiteHead from '../components/SiteHead'
 
 const NotFoundPage = () => (
   <Layout>
@@ -9,3 +10,5 @@ const NotFoundPage = () => (
 )
 
 export default NotFoundPage
+
+export const Head = () => <SiteHead />

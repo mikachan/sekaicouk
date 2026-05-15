@@ -5,7 +5,6 @@ module.exports = {
 		description: 'Personal site',
 	},
 	plugins: [
-		'gatsby-plugin-react-helmet',
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
