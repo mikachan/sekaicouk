@@ -29,6 +29,7 @@ function Contact(props) {
 						href="https://github.com/mikachan"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="GitHub"
 					>
 						<FontAwesomeIcon icon={faGithub} />
 					</OutboundLink>
@@ -38,6 +39,7 @@ function Contact(props) {
 						href="https://profiles.wordpress.org/mikachan/"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="WordPress.org profile"
 					>
 						<FontAwesomeIcon icon={faWordpress} />
 					</OutboundLink>
@@ -47,6 +49,7 @@ function Contact(props) {
 						href="https://www.linkedin.com/in/sarahnorris88"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="LinkedIn"
 					>
 						<FontAwesomeIcon icon={faLinkedin} />
 					</OutboundLink>
@@ -56,6 +59,7 @@ function Contact(props) {
 						href="https://bsky.app/profile/sekai.co.uk"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="Bluesky"
 					>
 						<FontAwesomeIcon icon={faBluesky} />
 					</OutboundLink>
@@ -65,6 +69,7 @@ function Contact(props) {
 						href="https://www.twitter.com/mikachan_"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="Twitter"
 					>
 						<FontAwesomeIcon icon={faTwitter} />
 					</OutboundLink>
@@ -74,6 +79,7 @@ function Contact(props) {
 						href="https://unsplash.com/@mikachan_"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="Unsplash"
 					>
 						<FontAwesomeIcon icon={faUnsplash} />
 					</OutboundLink>
@@ -83,6 +89,7 @@ function Contact(props) {
 						href="https://last.fm/user/mikachan_"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="Last.fm"
 					>
 						<FontAwesomeIcon icon={faLastfm} />
 					</OutboundLink>
@@ -92,6 +99,7 @@ function Contact(props) {
 						href="https://www.instagram.com/mikachan_/"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="Instagram"
 					>
 						<FontAwesomeIcon icon={faInstagram} />
 					</OutboundLink>
@@ -101,6 +109,7 @@ function Contact(props) {
 						href="https://www.tumblr.com/blog/mikachan88-blog"
 						target="_blank"
 						rel="noreferrer"
+						aria-label="Tumblr"
 					>
 						<FontAwesomeIcon icon={faTumblr} />
 					</OutboundLink>

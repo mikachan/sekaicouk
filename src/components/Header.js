@@ -39,6 +39,7 @@ const Header = (props) => (
 								href="https://github.com/mikachan"
 								target="_blank"
 								rel="noreferrer"
+								aria-label="GitHub"
 							>
 								<FontAwesomeIcon icon={faGithub} />
 							</OutboundLink>
@@ -48,6 +49,7 @@ const Header = (props) => (
 								href="https://profiles.wordpress.org/mikachan/"
 								target="_blank"
 								rel="noreferrer"
+								aria-label="WordPress.org profile"
 							>
 								<FontAwesomeIcon icon={faWordpress} />
 							</OutboundLink>
@@ -57,6 +59,7 @@ const Header = (props) => (
 								href="https://bsky.app/profile/sekai.co.uk"
 								target="_blank"
 								rel="noreferrer"
+								aria-label="Bluesky"
 							>
 								<FontAwesomeIcon icon={faBluesky} />
 							</OutboundLink>
@@ -66,6 +69,7 @@ const Header = (props) => (
 								href="https://www.linkedin.com/in/sarahnorris88"
 								target="_blank"
 								rel="noreferrer"
+								aria-label="LinkedIn"
 							>
 								<FontAwesomeIcon icon={faLinkedin} />
 							</OutboundLink>
