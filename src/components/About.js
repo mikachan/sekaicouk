@@ -1,6 +1,5 @@
 import { OutboundLink } from 'gatsby-plugin-google-gtag';
 import React from 'react';
-// import pic01 from '../images/pic01.jpg';
 import thora from '../images/thora.jpg';
 
 function About(props) {
@@ -22,15 +21,14 @@ function About(props) {
 					rel="noreferrer"
 				>
 					Lancashire
-				</OutboundLink>{' '}
-				with my dog, Thora.
+				</OutboundLink>.
 			</p>
 
 			<p>
 				I'm a self-taught Software Engineer with a passion for data and
-				analytics. I've been building websites since around 2000 and
-				I've been paid for doing it since 2008. I specialise in front
-				end development, and I'm currently a sponsored open-source
+				analytics. I've been building websites since 2000 and I've been
+				paid for doing it since 2008. I specialise in front end
+				development, and I'm currently a sponsored open-source
 				contributor for WordPress. Come say hi on{' '}
 				<OutboundLink
 					href="https://github.com/mikachan"
@@ -52,9 +50,9 @@ function About(props) {
 			</p>
 
 			<p>
-				In my spare time I enjoy walking, photography, traveling,
-				swimming, watching films, occasional bass guitar, and video
-				games. I also volunteer at{' '}
+				In my spare time I enjoy walking, photography, travelling, theme
+				parks, swimming, watching films, occasional bass guitar, and
+				video games. I also volunteer at{' '}
 				<OutboundLink
 					href="https://www.parbolddouglasmusic.org/"
 					target="_blank"
