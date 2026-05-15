@@ -20,6 +20,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://developer.wordpress.org/block-editor/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Block Editor Handbook
 				</OutboundLink>
@@ -28,6 +29,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://developer.wordpress.org/block-editor/contributors/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Contributor Guide
 				</OutboundLink>
@@ -36,6 +38,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/gutenberg"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Gutenberg GitHub repository
 				</OutboundLink>
@@ -44,6 +47,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://wordpress.slack.com/archives/C02QB2JS7"
 					target="_blank"
+					rel="noreferrer"
 				>
 					#core-editor Slack channel
 				</OutboundLink>
@@ -53,6 +57,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://developer.wordpress.org/block-editor/getting-started/#keeping-up-with-the-wordpress-project"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Guide for Keeping up with the WordPress project
 				</OutboundLink>
@@ -61,6 +66,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://wordpress.org/gutenberg/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					wordpress.org/gutenberg
 				</OutboundLink>
@@ -73,6 +79,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/gutenberg/contribute"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Good First Issues
 				</OutboundLink>
@@ -82,6 +89,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/orgs/WordPress/projects/210"
 					target="_blank"
+					rel="noreferrer"
 				>
 					GitHub Board: WordPress 6.7 Issues
 				</OutboundLink>
@@ -91,6 +99,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/orgs/WordPress/projects/232"
 					target="_blank"
+					rel="noreferrer"
 				>
 					GitHub Board: WordPress 6.7.x Issues
 				</OutboundLink>
@@ -100,6 +109,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/orgs/WordPress/projects/96/views/2"
 					target="_blank"
+					rel="noreferrer"
 				>
 					GitHub Board: Polish
 				</OutboundLink>
@@ -109,6 +119,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/orgs/WordPress/projects/155/views/5"
 					target="_blank"
+					rel="noreferrer"
 				>
 					GitHub Board: Design Priorities
 				</OutboundLink>
@@ -118,6 +129,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/gutenberg/labels/Needs%20Testing"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Label: Needs Testing
 				</OutboundLink>
@@ -127,6 +139,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/gutenberg/labels/Needs%20Dev"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Label: Needs Dev
 				</OutboundLink>
@@ -136,6 +149,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/gutenberg/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20label%3A%22%5BType%5D%20Overview%22"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Label: Overview
 				</OutboundLink>
@@ -148,6 +162,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://code.visualstudio.com/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					VS Code
 				</OutboundLink>
@@ -157,19 +172,28 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.gitkraken.com/gitlens"
 					target="_blank"
+					rel="noreferrer"
 				>
 					GitLens
 				</OutboundLink>
 				: My favourite way to use Git Blame
 			</li>
 			<li>
-				<OutboundLink href="https://git-fork.com/" target="_blank">
+				<OutboundLink
+					href="https://git-fork.com/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					Fork
 				</OutboundLink>
 				: Recommended Git Client
 			</li>
 			<li>
-				<OutboundLink href="https://iterm2.com/" target="_blank">
+				<OutboundLink
+					href="https://iterm2.com/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					iTerm2
 				</OutboundLink>
 				: Recommended Mac terminal emulator

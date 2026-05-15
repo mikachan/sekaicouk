@@ -18,6 +18,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.freecodecamp.org/news/how-to-contribute-to-open-source-projects-beginners-guide/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Beginnger's Guide on Contributing to Open Source
 				</OutboundLink>
@@ -27,6 +28,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/open-sauced/open-sauced"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Open Sauced
 				</OutboundLink>
@@ -36,6 +38,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://opensource.guide/how-to-contribute/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					opensource.guide
 				</OutboundLink>
@@ -45,6 +48,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://kentcdodds.com/blog/introducing-how-to-contribute-to-open-source"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Kent C. Dodds on open source
 				</OutboundLink>
@@ -56,6 +60,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.firsttimersonly.com/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					First Timers Only
 				</OutboundLink>
@@ -65,6 +70,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.codetriage.com/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					codetriage.com
 				</OutboundLink>
@@ -74,6 +80,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/MunGell/awesome-for-beginners"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Awesome for Beginners
 				</OutboundLink>
@@ -81,7 +88,11 @@ const OsPage = () => (
 				language
 			</li>
 			<li>
-				<OutboundLink href="https://up-for-grabs.net/" target="_blank">
+				<OutboundLink
+					href="https://up-for-grabs.net/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					Up for Grabs
 				</OutboundLink>
 				: another list!
@@ -90,13 +101,18 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/firstcontributions/first-contributions"
 					target="_blank"
+					rel="noreferrer"
 				>
 					first contributions
 				</OutboundLink>
 				: guides beginners into making their first contribution
 			</li>
 			<li>
-				<OutboundLink href="https://contributor.ninja/" target="_blank">
+				<OutboundLink
+					href="https://contributor.ninja/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					contributor.ninja
 				</OutboundLink>
 				: a list of issues categorised by language
@@ -105,12 +121,17 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://opensourcefriday.com/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					opensourcefriday.com
 				</OutboundLink>
 			</li>
 			<li>
-				<OutboundLink href="https://hacktoberfest.com/" target="_blank">
+				<OutboundLink
+					href="https://hacktoberfest.com/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					hacktoberfest.com
 				</OutboundLink>
 			</li>
@@ -118,7 +139,11 @@ const OsPage = () => (
 		<h3>Recommended reading/learning</h3>
 		<ul>
 			<li>
-				<OutboundLink href="https://opensource.com/" target="_blank">
+				<OutboundLink
+					href="https://opensource.com/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					opensource.com
 				</OutboundLink>
 			</li>
@@ -127,6 +152,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.oreilly.com/openbook/freedom/ch00.html"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Crusade for Free Software
 				</OutboundLink>
@@ -136,6 +162,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="http://www.catb.org/esr/writings/homesteading/cathedral-bazaar/index.html"
 					target="_blank"
+					rel="noreferrer"
 				>
 					The Cathedral and the Bazaar
 				</OutboundLink>
@@ -144,6 +171,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://hughlashbrooke.com/2019/03/15/becoming-a-good-open-source-citizen/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Becoming a good open-source citizen
 				</OutboundLink>{' '}
@@ -153,6 +181,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.ted.com/playlists/13/open_source_open_world"
 					target="_blank"
+					rel="noreferrer"
 				>
 					TED Talks on Open Source
 				</OutboundLink>
@@ -161,6 +190,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.youtube.com/watch?v=sK3YH3-5nDo&ab_channel=TEDxTalks"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Video: Steve Fisher - What Can We Learn From Open Source
 				</OutboundLink>
@@ -169,6 +199,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://training.linuxfoundation.org/training/fundamentals-of-professional-open-source-management-lfc110/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Course: Fundamentals of Professional Open Source Management
 				</OutboundLink>
@@ -178,6 +209,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.openlogic.com/resources/2023-state-open-source-report"
 					target="_blank"
+					rel="noreferrer"
 				>
 					2023 State of Open Source Report
 				</OutboundLink>
@@ -186,6 +218,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.blog/2020-04-09-github-protips-tips-tricks-hacks-and-secrets-from-lee-reilly/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					GitHub Tips & Tricks
 				</OutboundLink>
@@ -194,6 +227,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://www.dreamsongs.com/IHE/IHE-31.html"
 					target="_blank"
+					rel="noreferrer"
 				>
 					The Secret of Why Open Source Works
 				</OutboundLink>
@@ -205,6 +239,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/sveltejs/svelte"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Svelte
 				</OutboundLink>{' '}
@@ -212,6 +247,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/sveltejs/kit"
 					target="_blank"
+					rel="noreferrer"
 				>
 					SvelteKit
 				</OutboundLink>
@@ -220,6 +256,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/facebook/react"
 					target="_blank"
+					rel="noreferrer"
 				>
 					React
 				</OutboundLink>{' '}
@@ -227,6 +264,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/gatsbyjs/gatsby"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Gatsby
 				</OutboundLink>
@@ -235,6 +273,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/cypress-io/cypress"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Cypress
 				</OutboundLink>{' '}
@@ -242,6 +281,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/microsoft/playwright"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Playwright
 				</OutboundLink>
@@ -250,6 +290,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/"
 					target="_blank"
+					rel="noreferrer"
 				>
 					WordPress
 				</OutboundLink>
@@ -258,6 +299,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://git.drupalcode.org/project/drupal"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Drupal
 				</OutboundLink>
@@ -266,7 +308,11 @@ const OsPage = () => (
 		<h3>Links to projects I'm working on</h3>
 		<p>
 			I'm{' '}
-			<OutboundLink href="https://github.com/mikachan" target="_blank">
+			<OutboundLink
+				href="https://github.com/mikachan"
+				target="_blank"
+				rel="noreferrer"
+			>
 				@mikachan
 			</OutboundLink>{' '}
 			on GitHub. I'm happy to be pinged to answer questions or review a
@@ -278,6 +324,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/gutenberg/labels/Good%20First%20Issue"
 					target="_blank"
+					rel="noreferrer"
 				>
 					good first issues
 				</OutboundLink>{' '}
@@ -285,6 +332,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/gutenberg/labels/Needs%20Testing"
 					target="_blank"
+					rel="noreferrer"
 				>
 					needs testing
 				</OutboundLink>{' '}
@@ -294,6 +342,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/create-block-theme"
 					target="_blank"
+					rel="noreferrer"
 				>
 					Create Block Theme
 				</OutboundLink>{' '}
@@ -303,6 +352,7 @@ const OsPage = () => (
 				<OutboundLink
 					href="https://github.com/WordPress/wordpress-playground"
 					target="_blank"
+					rel="noreferrer"
 				>
 					WordPress Playground
 				</OutboundLink>{' '}

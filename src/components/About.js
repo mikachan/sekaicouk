@@ -21,7 +21,8 @@ function About(props) {
 					rel="noreferrer"
 				>
 					Lancashire
-				</OutboundLink>.
+				</OutboundLink>
+				.
 			</p>
 
 			<p>
@@ -33,6 +34,7 @@ function About(props) {
 				<OutboundLink
 					href="https://github.com/mikachan"
 					target="_blank"
+					rel="noreferrer"
 				>
 					GitHub
 				</OutboundLink>
@@ -43,7 +45,11 @@ function About(props) {
 				Some of my favourite things are peanut butter, dragons, cowboys,
 				animals, rollercoasters, and pretty much anything Japanese,
 				especially{' '}
-				<OutboundLink href="https://you.sekai.co.uk" target="_blank">
+				<OutboundLink
+					href="https://you.sekai.co.uk"
+					target="_blank"
+					rel="noreferrer"
+				>
 					this guitarist
 				</OutboundLink>
 				.
