@@ -6,6 +6,48 @@ import Layout from '../components/layout';
 import Main from '../components/Main';
 import SiteHead from '../components/SiteHead';
 
+const articleByHash = {
+	about: 'about',
+	contact: 'contact',
+	social: 'contact',
+	socials: 'contact',
+};
+
+const hashByArticle = {
+	about: '#about',
+	contact: '#socials',
+};
+
+const getArticleFromHash = (hash = '') => {
+	const hashKey = decodeURIComponent(hash.replace(/^#/, '')).toLowerCase();
+
+	return articleByHash[hashKey] || '';
+};
+
+const updateArticleHash = (nextArticle) => {
+	if (typeof window === 'undefined') {
+		return;
+	}
+
+	const nextHash = hashByArticle[nextArticle];
+
+	if (nextHash && window.location.hash !== nextHash) {
+		window.history.pushState(null, '', nextHash);
+	}
+};
+
+const clearArticleHash = () => {
+	if (typeof window === 'undefined' || !window.location.hash) {
+		return;
+	}
+
+	window.history.replaceState(
+		null,
+		'',
+		`${window.location.pathname}${window.location.search}`
+	);
+};
+
 function IndexPage(props) {
 	const [isArticleVisible, setIsArticleVisible] = useState(false);
 	const [timeout, setStateTimeout] = useState(false);
@@ -13,6 +55,7 @@ function IndexPage(props) {
 	const [articleTimeout, setArticleTimeout] = useState(false);
 	const [loading, setLoading] = useState('is-loading');
 	const animationTimeoutsRef = useRef([]);
+	const isArticleVisibleRef = useRef(false);
 	const wrapperRef = useRef(null);
 
 	const clearAnimationTimeouts = useCallback(() => {
@@ -37,8 +80,11 @@ function IndexPage(props) {
 	}, []);
 
 	const handleOpenArticle = useCallback(
-		(nextArticle) => {
+		(nextArticle, options = {}) => {
 			clearAnimationTimeouts();
+			if (options.updateHash !== false) {
+				updateArticleHash(nextArticle);
+			}
 			setIsArticleVisible(true);
 			setArticle(nextArticle);
 
@@ -55,21 +101,53 @@ function IndexPage(props) {
 		[clearAnimationTimeouts]
 	);
 
-	const handleCloseArticle = useCallback(() => {
-		clearAnimationTimeouts();
-		setArticleTimeout(false);
+	const handleCloseArticle = useCallback(
+		(options = {}) => {
+			clearAnimationTimeouts();
+			if (options.updateHash !== false) {
+				clearArticleHash();
+			}
+			setArticleTimeout(false);
 
-		const stateTimeoutId = setTimeout(() => {
-			setStateTimeout(false);
-		}, 325);
+			const stateTimeoutId = setTimeout(() => {
+				setStateTimeout(false);
+			}, 325);
 
-		const articleTimeoutId = setTimeout(() => {
-			setIsArticleVisible(false);
-			setArticle('');
-		}, 350);
+			const articleTimeoutId = setTimeout(() => {
+				setIsArticleVisible(false);
+				setArticle('');
+			}, 350);
 
-		animationTimeoutsRef.current = [stateTimeoutId, articleTimeoutId];
-	}, [clearAnimationTimeouts]);
+			animationTimeoutsRef.current = [stateTimeoutId, articleTimeoutId];
+		},
+		[clearAnimationTimeouts]
+	);
+
+	useEffect(() => {
+		isArticleVisibleRef.current = isArticleVisible;
+	}, [isArticleVisible]);
+
+	useEffect(() => {
+		const syncArticleWithHash = () => {
+			const nextArticle = getArticleFromHash(window.location.hash);
+
+			if (nextArticle) {
+				handleOpenArticle(nextArticle, { updateHash: false });
+				return;
+			}
+
+			if (isArticleVisibleRef.current) {
+				handleCloseArticle({ updateHash: false });
+			}
+		};
+
+		syncArticleWithHash();
+		window.addEventListener('hashchange', syncArticleWithHash);
+
+		return () => {
+			window.removeEventListener('hashchange', syncArticleWithHash);
+		};
+	}, [handleCloseArticle, handleOpenArticle]);
 
 	useEffect(() => {
 		if (!isArticleVisible) {
