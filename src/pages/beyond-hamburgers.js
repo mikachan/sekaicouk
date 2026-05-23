@@ -22,6 +22,15 @@ const OsPage = () => (
 			</li>
 			<li>
 				<OutboundLink
+					href="https://github.com/mikachan/navigation-overlay-examples"
+					target="_blank"
+				>
+					Example AI prompts and skill
+				</OutboundLink>
+				: GitHub repo with example AI prompts and skills
+			</li>
+			<li>
+				<OutboundLink
 					href="https://make.wordpress.org/core/2026/03/04/customisable-navigation-overlays-in-wordpress-7-0/"
 					target="_blank"
 				>
