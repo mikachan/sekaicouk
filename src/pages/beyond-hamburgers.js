@@ -9,7 +9,7 @@ const OsPage = () => (
 			Thank you for attending my talk! Here is a list of resources about the Navigation Overlay template part, how you can use it and how you can contribute to it.
 		</p>
 
-		<h3>Using the Navigation Overlay template part</h3>
+		<h3>Talk Resources</h3>
 		<ul>
 			<li>
 				<OutboundLink
@@ -29,6 +29,10 @@ const OsPage = () => (
 				</OutboundLink>
 				: GitHub repo with example AI prompts and skills
 			</li>
+		</ul>
+
+		<h3>Using the Navigation Overlay template part</h3>
+		<ul>
 			<li>
 				<OutboundLink
 					href="https://make.wordpress.org/core/2026/03/04/customisable-navigation-overlays-in-wordpress-7-0/"
