@@ -17,6 +17,9 @@ const TalksPage = () => (
 				<Link to="/gutenberg">Help Shape Gutenberg</Link>: resources
 				for getting started with Gutenberg contribution.
 			</li>
+			<li>
+				<Link to="/beyond-hamburgers">Beyond Hamburgers</Link>: links to the slides and resources from my talk on the Navigation block changes in WordPress 7.0.
+			</li>
 		</ul>
 
 		<Link to="/">← back to sekai.co.uk</Link>
