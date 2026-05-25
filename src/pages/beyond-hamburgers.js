@@ -13,7 +13,7 @@ const OsPage = () => (
 		<ul>
 			<li>
 				<OutboundLink
-					href=""
+					href="https://docs.google.com/presentation/d/112zqtK0_NtXpMd5-1d-Z7sCTbkvWxrf9UdmtjeR7blU/edit?usp=sharing"
 					target="_blank"
 				>
 					Talk slides
@@ -38,34 +38,32 @@ const OsPage = () => (
 				</OutboundLink>
 				: Customisable navigation overlays in WordPress 7.0
 			</li>
-		</ul>
-		<h3>Contributing to the Navigation Overlay template part</h3>
-		<ul>
 			<li>
 				<OutboundLink
-					href="https://github.com/open-sauced/open-sauced"
+					href="https://developer.wordpress.org/block-editor/"
 					target="_blank"
 				>
-					Open Sauced
+					Block Editor Handbook
 				</OutboundLink>
-				: structured onboarding for new contributors
+				: official documentation for block development and the Site Editor
 			</li>
 			<li>
 				<OutboundLink
-					href="https://opensource.guide/how-to-contribute/"
+					href="https://github.com/WordPress/gutenberg/issues/76037"
 					target="_blank"
 				>
-					opensource.guide
+					Tracking issue #76037
 				</OutboundLink>
-				: learn more about how to contribute to open source
+				: Navigation Sidebar as a discovery and editing surface
 			</li>
 			<li>
 				<OutboundLink
-					href="https://kentcdodds.com/blog/introducing-how-to-contribute-to-open-source"
+					href="https://github.com/WordPress/gutenberg/issues/77069"
 					target="_blank"
 				>
-					Kent C. Dodds on open source
+					Tracking issue #77069
 				</OutboundLink>
+				: Improve Navigation editing in the extensible Site Editor sidebar
 			</li>
 		</ul>
 
