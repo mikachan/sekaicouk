@@ -40,5 +40,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mikachan/sekaicouk"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
