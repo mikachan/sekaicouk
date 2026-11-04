@@ -14,11 +14,13 @@ const TalksPage = () => (
 				getting started with open source contribution.
 			</li>
 			<li>
-				<Link to="/gutenberg">Help Shape Gutenberg</Link>: resources
-				for getting started with Gutenberg contribution.
+				<Link to="/gutenberg">Help Shape Gutenberg</Link>: resources for
+				getting started with Gutenberg contribution.
 			</li>
 			<li>
-				<Link to="/beyond-hamburgers">Beyond Hamburgers</Link>: links to the slides and resources from my talk on the Navigation block changes in WordPress 7.0.
+				<Link to="/beyond-hamburgers">Beyond Hamburgers</Link>: links to
+				the slides and resources from my talk on the Navigation block
+				changes in WordPress 7.0.
 			</li>
 		</ul>
 

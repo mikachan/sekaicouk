@@ -6,7 +6,9 @@ const OsPage = () => (
 	<Layout>
 		<h1>Beyond Hamburgers</h1>
 		<p>
-			Thank you for attending my talk! Here is a list of resources about the Navigation Overlay template part, how you can use it and how you can contribute to it.
+			Thank you for attending my talk! Here is a list of resources about
+			the Navigation Overlay template part, how you can use it and how you
+			can contribute to it.
 		</p>
 
 		<h3>Talk Resources</h3>
@@ -49,7 +51,8 @@ const OsPage = () => (
 				>
 					Block Editor Handbook
 				</OutboundLink>
-				: official documentation for block development and the Site Editor
+				: official documentation for block development and the Site
+				Editor
 			</li>
 			<li>
 				<OutboundLink
@@ -67,7 +70,8 @@ const OsPage = () => (
 				>
 					Tracking issue #77069
 				</OutboundLink>
-				: Improve Navigation editing in the extensible Site Editor sidebar
+				: Improve Navigation editing in the extensible Site Editor
+				sidebar
 			</li>
 		</ul>
 
