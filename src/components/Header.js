@@ -127,6 +127,15 @@ const Header = (props) => (
 						Forget-me-not
 					</OutboundLink>
 				</li>
+				<li>
+					<OutboundLink
+						href="https://sekai.co.uk/soundstamp"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Soundstamp
+					</OutboundLink>
+				</li>
 			</ul>
 		</nav>
 	</header>
