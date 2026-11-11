@@ -129,7 +129,7 @@ const Header = (props) => (
 				</li>
 				<li>
 					<OutboundLink
-						href="https://sekai.co.uk/soundstamp"
+						href="https://soundstamp.sekai.co.uk/"
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -138,7 +138,7 @@ const Header = (props) => (
 				</li>
 				<li>
 					<OutboundLink
-						href="https://sekai.co.uk/trackdown"
+						href="https://trackdown.sekai.co.uk/"
 						target="_blank"
 						rel="noreferrer"
 					>
