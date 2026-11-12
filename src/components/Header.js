@@ -145,6 +145,15 @@ const Header = (props) => (
 						Trackdown
 					</OutboundLink>
 				</li>
+				<li>
+					<OutboundLink
+						href="https://dropandpair.com/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Drop and Pair
+					</OutboundLink>
+				</li>
 			</ul>
 		</nav>
 	</header>
